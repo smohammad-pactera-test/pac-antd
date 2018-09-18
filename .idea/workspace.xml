@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f404399-6d3b-44e3-a43f-2da82cc1d7c0" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stories/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addons.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.storybook/addons.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="C:/4-12 git/epc-taxtool-web" value="PREVIEW" />
+        <entry key="C:/4-18 master epc tax/epc-taxtool-web" value="PREVIEW" />
+        <entry key="C:/4-19 Master/epc-taxtool-web" value="PREVIEW" />
+        <entry key="C:/EPC-MarketPlaceProject/epc-marketplace-web" value="PREVIEW" />
+        <entry key="C:/EPC-OfrStr/epc-ofrstr-web" value="PREVIEW" />
+        <entry key="C:/EPC-TAX/epc-taxtool-web" value="PREVIEW" />
+        <entry key="C:/EPC-UITK/tax-web/epc-taxtool-web" value="PREVIEW" />
+        <entry key="C:/logs test/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/3-27-GIT EPC/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/3-28 GIT EPC/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-15-2018 Git Tax/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-2-2018 GIT EPC/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-2-2018 Master branch/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-23 Master/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-26-2018 Master Tax/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-3 Tax Modified acc to Helen/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-30 epc tax master/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-8-2018 Epc Without NPM Test/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/4-8-2018 NPM TEST BRANCH/epc-taxtool-web 2" value="PREVIEW" />
+        <entry key="D:/4-9-2018 NPM TEST TAX/epc-taxtool-web 2" value="PREVIEW" />
+        <entry key="D:/4-9-2018 Tax Complete/epc-taxtool-web 2" value="PREVIEW" />
+        <entry key="D:/4-9-2018 Unmodified Master/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/5-1-2018 Master/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/5-16 master branch/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/5-18 master/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/5-20 Master tax Proj/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/5-5-2018 Tax Project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/5-7 tax main branch/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/6-1 tax proj/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/6-11 notification-module/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/6-18 tax project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/6-2 Complete Tax Project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/6-20 notification master branch/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/6-20-notificationLogs/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/6-21 master logs/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/6-28 NotLogs/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/6-29-2018 Logs/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/6-3 Tax Module/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/6-5 tax project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/6-7 tax project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/6-8 tax project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/7-16 logs master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/7-16 tax project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/7-2-2018 tax Project/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/7-23 tax module/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/7-23-2018 Logs master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/7-30 logs master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/7-30 tax master code/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/7-5-2018 N_logs/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/7-8 Logs master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/7-9 Tax Latest project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/8-13 tax/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/8-17 logs master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/8-22 log master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/8-4 logs master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/8-8 logs master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/8-8 tax module/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/8-9 tax project master/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/80 tax/tax u test branch/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/9-5 notifications/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/E TEST/epc-marketplace-web" value="PREVIEW" />
+        <entry key="D:/EPC Content Admin/epc-contentadmin-web" value="PREVIEW" />
+        <entry key="D:/EPC- Tax-Web - NPM Test/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/EPC-TAX-Expedia/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/EPC-TAX-Localization fix/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/EPC-Tax-BackUp/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules New Primer Spring/primer-template-epc-spring-mvc" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/EPC" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/EPC navigation/epc-navigation" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/EPC-CancelPolicy/epc-cancelpolicy-web" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/EPC-Help/epc-help-web" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/EPC-NEW-CLONES/epc-ofrstr-web" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/EPC-Tax/epc-tax" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/EPC-ofstr-web/epc-ofrstr-web" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/epc-marketplace-web" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/EPC-Modules/primer-template-epc-spring-mvc" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/Epc-Tax-Web-Tool/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/EPC-Tech/Epc-market place new/epc-marketplace-web" value="PREVIEW" />
+        <entry key="D:/Epc Tax NPM TEST/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Epc user acc web/epc-user-acct-web" value="PREVIEW" />
+        <entry key="D:/Epc-Tech-Test/epc-ofrstr-web" value="PREVIEW" />
+        <entry key="D:/Epc-Tech-Test/primer-template-epc-spring-mvc" value="PREVIEW" />
+        <entry key="D:/Grace/Tax-Latest/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/MASTER GIT/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/New-EPC/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Notifications-Exp/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/PMM Final/tax u test branch/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Seperate Code/epc-taxtool-web 2" value="PREVIEW" />
+        <entry key="D:/TAX/6-8 tax project/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch Projects/5-12/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch Projects/5-15(2)/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch Projects/5-15/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch Projects/5-4  pmm/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch Projects/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch Projects/latest/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch/5-6/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch/5-7/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tanya Branch/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/Tax and PMM Module/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/datepicker-test/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/dev-Talha/4-11/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/epc 4-30 test/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/epc-apm/epc-apm-web" value="PREVIEW" />
+        <entry key="D:/epc-tax 7-11/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/fixed logs master/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/git delete/pmm and tax/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/git dev talha 2/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/git epc uitk/epc-uitk-react" value="PREVIEW" />
+        <entry key="D:/git tax/4-12/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/git tax/4-16 2/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/git tax/4-17/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/logs progress bar 7 - 18/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/master 4-26-tax web -tool/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/notification 6-27/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/pmm-talha PR 1/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/ppm1-dev1/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/pricingModelMigration/5-9-2018/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/pull 50 test/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/t tax/tax -final/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/tax u test branch/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/tax-end-branch/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/tax-fix-production/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/test 3/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/test 4/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/test logs test/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/test pmm/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/tests notification logs/epc-booking-notifications-web" value="PREVIEW" />
+        <entry key="D:/uitk-react-version-upgrade-tax/epc-taxtool-web" value="PREVIEW" />
+        <entry key="D:/wrap up tax project/6-8 tax project/epc-taxtool-web" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.storybook/addons.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="2906" />
+    <option name="height" value="1566" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pac-antd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pac-antd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pac-antd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pac-antd" type="462c0819:PsiDirectoryNode" />
+              <item name=".storybook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pac-antd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pac-antd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pac-antd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pac-antd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="stories" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f404399-6d3b-44e3-a43f-2da82cc1d7c0" name="Default" comment="" />
+      <created>1537303427615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537303427615</updated>
+      <workItem from="1537303428923" duration="627000" />
+      <workItem from="1537304164676" duration="53000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="680000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-13" y="-13" width="2906" height="1566" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2839601" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2245702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stories/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stories/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.storybook/addons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
