@@ -1,19 +1,33 @@
-import React from 'react';
-
+import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import { withInfo } from '@storybook/addon-info';
+import { withKnobs, boolean, button, number, object, select, text } from '@storybook/addon-knobs';
+import 'antd/dist/antd.css';
 
-import { Button, Welcome } from '@storybook/react/demo';
+import { Button } from 'antd';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+const btnType = {
+    'primary':'primary',
+    '':'default',
+    'dashed':'dashed',
+    'danger':'danger'
+};
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
+const size = {
+    'small': 'small',
+    'large': 'large',
+    'omitted':'omitted'
+};
+
+const stories = storiesOf('Pactera Button', module);
+stories.addDecorator(withKnobs);
+
+stories.add('Button', withInfo({})(() => (
+    <Button disabled={ boolean('Disabled', false) }
+            type={ select('Button type', btnType, 'primary') }
+            size={ select('Button size', size, 'default') }
+            onClick={ action('Button clicked!') }>
+        { text('Label', 'Hello Button') }
     </Button>
-  ));
+)));
