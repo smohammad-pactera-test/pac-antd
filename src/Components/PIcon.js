@@ -6,9 +6,21 @@ import { Icon } from 'antd';
 export default class PIcon extends React.Component {
     render() {
         const {
-            type
+            type,
+            style,
+            theme,
+            spin,
+            component,
+            twoToneColor
         } = this.props
-        return <Icon type={type} />
+
+        return <Icon type={type}
+                     style={style}
+                     theme={theme}
+                     spin={spin}
+                     component={component}
+                     twoToneColor={twoToneColor}
+        />
     }
 }
 

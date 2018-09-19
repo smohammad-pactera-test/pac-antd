@@ -14,6 +14,7 @@ export default class PButton extends React.Component {
             disabled,
             onClick
         } = this.props
+        console.log("props children are",this.props.children);
         return <Button
             type={type}
             onClick={onClick}
