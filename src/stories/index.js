@@ -5,7 +5,11 @@ import {withInfo} from '@storybook/addon-info';
 import {withKnobs, boolean, button, number, object, select, text} from '@storybook/addon-knobs';
 import 'antd/dist/antd.css';
 
-import {Button, Icon} from 'antd';
+
+
+import PButton from '../Components/PButton';
+import PButtonGroup from '../Components/PButtonGroup';
+import PIcon from '../Components/PIcon';
 
 const btnType = {
     'primary': 'primary',
@@ -41,103 +45,103 @@ const stories = storiesOf('Button', module);
 stories.addDecorator(withKnobs);
 
 stories.add('Primary Buttons', withInfo(infoText.button)(() => (
-    <Button disabled={boolean('Disabled', false)}
+    <PButton disabled={boolean('Disabled', false)}
             type={select('Button type', btnType, 'primary')}
-            onClick={action('Button clicked!')}>
+             onClick={action('Button clicked!')}>
         {text('Label', 'Hello Button')}
-    </Button>
+    </PButton>
 )));
 
 stories.add('Buttons with sizes', withInfo(infoText.button)(() => (
-    <Button disabled={boolean('Disabled', false)}
+    <PButton disabled={boolean('Disabled', false)}
             type={select('Button type', btnType, 'primary')}
             size={select('Button size', size, 'default')}
-            onClick={action('Button clicked!')}>
+             onClick={action('Button clicked!')}>
         {text('Label', 'Hello Button')}
-    </Button>
+    </PButton>
 )));
 
-const ButtonGroup = Button.Group;
+
 stories.add('Buttons Groups', withInfo(infoText["button and icon"] + "  \nconst ButtonGroup = Button.Group")(() => (
 
     <div>
         <h4>Basic</h4>
-        <ButtonGroup>
-            <Button disabled={boolean('Disabled', false)}
+        <PButtonGroup>
+            <PButton disabled={boolean('Disabled', false)}
                     type={select('Button type', btnType, 'primary')}
                     size={select('Button size', size, 'default')}
                     onClick={action('Button clicked!')}>
                 {text('Label', 'Cancel')}
-            </Button>
-            <Button>OK</Button>
-        </ButtonGroup>
-        <ButtonGroup>
-            <Button disabled>L</Button>
-            <Button disabled>M</Button>
-            <Button disabled>R</Button>
-        </ButtonGroup>
-        <ButtonGroup>
-            <Button>L</Button>
-            <Button>M</Button>
-            <Button>R</Button>
-        </ButtonGroup>
+            </PButton>
+            <PButton>OK</PButton>
+        </PButtonGroup>
+        <PButtonGroup>
+            <PButton disabled>L</PButton>
+            <PButton disabled>M</PButton>
+            <PButton disabled>R</PButton>
+        </PButtonGroup>
+        <PButtonGroup>
+            <PButton>L</PButton>
+            <PButton>M</PButton>
+            <PButton>R</PButton>
+        </PButtonGroup>
 
         <h4>With Icon</h4>
-        <ButtonGroup>
-            <Button type="primary">
-                <Icon type="left"/>Go back
-            </Button>
-            <Button type="primary">
-                Go forward<Icon type="right"/>
-            </Button>
-        </ButtonGroup>
-        <ButtonGroup>
-            <Button type="primary" icon="cloud"/>
-            <Button type="primary" icon="cloud-download"/>
-        </ButtonGroup>
+        <PButtonGroup>
+            <PButton type="primary">
+                <PIcon type="left"/>Go back
+            </PButton>
+            <PButton type="primary">
+                Go forward<PIcon type="right"/>
+            </PButton>
+        </PButtonGroup>
+        <PButtonGroup>
+            <PButton type="primary" icon="cloud"/>
+            <PButton type="primary" icon="cloud-download"/>
+        </PButtonGroup>
     </div>
 )));
 
 stories.add('Block level Buttons', withInfo(infoText.button)(() => (
     <div>
-        <Button disabled={boolean('Disabled', false)}
+        <PButton disabled={boolean('Disabled', false)}
                 block
                 type={select('Button type', btnType, 'primary')}
                 size={select('Button size', size, 'default')}
                 onClick={action('Button clicked!')}>
             Im a Block level Button
-        </Button>
-        <Button block
+        </PButton>
+        <PButton block
         >
             Im a Block level Button
-        </Button>
-        <Button block
+        </PButton>
+        <PButton block
         >
             Im a Block level Button
-        </Button>
-        <Button block
+        </PButton>
+        <PButton block
         >
             Im a Block level Button
-        </Button>
+        </PButton>
     </div>
 )));
 stories.add('Buttons with Icons and shapes', withInfo(infoText.button)(() => (
-    <Button disabled={boolean('Disabled', false)}
+    <PButton disabled={boolean('Disabled', false)}
             shape={select('shape', {circle:'circle',omitted:'omitted'}, 'circle')}
             icon="search"
             type={select('Button type', btnType, 'primary')}
             size={select('Button size', size, 'default')}
             onClick={action('Button clicked!')}>
 
-    </Button>
+    </PButton>
 )));
 
 stories.add('Ghost buttons', withInfo(infoText.button)(() => (
-    <Button disabled={boolean('Disabled', false)}
+    <PButton disabled={boolean('Disabled', false)}
             ghost={boolean('ghost',true)}
             type={select('Button type', btnType, 'primary')}
             size={select('Button size', size, 'default')}
             onClick={action('Button clicked!')}>
         {text('Label', 'Hello Button')}
-    </Button>
+    </PButton>
 )));
