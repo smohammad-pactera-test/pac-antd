@@ -1,33 +1,143 @@
-import React, { Component } from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withInfo } from '@storybook/addon-info';
-import { withKnobs, boolean, button, number, object, select, text } from '@storybook/addon-knobs';
+import React, {Component} from 'react';
+import {storiesOf} from '@storybook/react';
+import {action} from '@storybook/addon-actions';
+import {withInfo} from '@storybook/addon-info';
+import {withKnobs, boolean, button, number, object, select, text} from '@storybook/addon-knobs';
 import 'antd/dist/antd.css';
 
-import { Button } from 'antd';
+import {Button, Icon} from 'antd';
 
 const btnType = {
-    'primary':'primary',
-    '':'default',
-    'dashed':'dashed',
-    'danger':'danger'
+    'primary': 'primary',
+    '': 'default',
+    'dashed': 'dashed',
+    'danger': 'danger'
 };
 
 const size = {
     'small': 'small',
     'large': 'large',
-    'omitted':'omitted'
+    'omitted': 'omitted'
 };
 
-const stories = storiesOf('Pactera Button', module);
+const loadingOptions = {
+    'true': 'true',
+    'false': 'false'
+};
+
+
+const infoText = {
+    'button': 'import { Button } from antd;',
+    'button and icon': 'import { Button , Icon } from antd;'
+};
+
+const booleanValues = {
+    true:'on',
+    false:'off'
+}
+
+
+const stories = storiesOf('Button', module);
 stories.addDecorator(withKnobs);
 
-stories.add('Button', withInfo({})(() => (
-    <Button disabled={ boolean('Disabled', false) }
-            type={ select('Button type', btnType, 'primary') }
-            size={ select('Button size', size, 'default') }
-            onClick={ action('Button clicked!') }>
-        { text('Label', 'Hello Button') }
+stories.add('Primary Buttons', withInfo(infoText.button)(() => (
+    <Button disabled={boolean('Disabled', false)}
+            type={select('Button type', btnType, 'primary')}
+            onClick={action('Button clicked!')}>
+        {text('Label', 'Hello Button')}
+    </Button>
+)));
+
+stories.add('Buttons with sizes', withInfo(infoText.button)(() => (
+    <Button disabled={boolean('Disabled', false)}
+            type={select('Button type', btnType, 'primary')}
+            size={select('Button size', size, 'default')}
+            onClick={action('Button clicked!')}>
+        {text('Label', 'Hello Button')}
+    </Button>
+)));
+
+const ButtonGroup = Button.Group;
+stories.add('Buttons Groups', withInfo(infoText["button and icon"] + "  \nconst ButtonGroup = Button.Group")(() => (
+
+    <div>
+        <h4>Basic</h4>
+        <ButtonGroup>
+            <Button disabled={boolean('Disabled', false)}
+                    type={select('Button type', btnType, 'primary')}
+                    size={select('Button size', size, 'default')}
+                    onClick={action('Button clicked!')}>
+                {text('Label', 'Cancel')}
+            </Button>
+            <Button>OK</Button>
+        </ButtonGroup>
+        <ButtonGroup>
+            <Button disabled>L</Button>
+            <Button disabled>M</Button>
+            <Button disabled>R</Button>
+        </ButtonGroup>
+        <ButtonGroup>
+            <Button>L</Button>
+            <Button>M</Button>
+            <Button>R</Button>
+        </ButtonGroup>
+
+        <h4>With Icon</h4>
+        <ButtonGroup>
+            <Button type="primary">
+                <Icon type="left"/>Go back
+            </Button>
+            <Button type="primary">
+                Go forward<Icon type="right"/>
+            </Button>
+        </ButtonGroup>
+        <ButtonGroup>
+            <Button type="primary" icon="cloud"/>
+            <Button type="primary" icon="cloud-download"/>
+        </ButtonGroup>
+    </div>
+)));
+
+stories.add('Block level Buttons', withInfo(infoText.button)(() => (
+    <div>
+        <Button disabled={boolean('Disabled', false)}
+                block
+                type={select('Button type', btnType, 'primary')}
+                size={select('Button size', size, 'default')}
+                onClick={action('Button clicked!')}>
+            Im a Block level Button
+        </Button>
+        <Button block
+        >
+            Im a Block level Button
+        </Button>
+        <Button block
+        >
+            Im a Block level Button
+        </Button>
+        <Button block
+        >
+            Im a Block level Button
+        </Button>
+    </div>
+)));
+stories.add('Buttons with Icons and shapes', withInfo(infoText.button)(() => (
+    <Button disabled={boolean('Disabled', false)}
+            shape={select('shape', {circle:'circle',omitted:'omitted'}, 'circle')}
+            icon="search"
+            type={select('Button type', btnType, 'primary')}
+            size={select('Button size', size, 'default')}
+            onClick={action('Button clicked!')}>
+
+    </Button>
+)));
+
+stories.add('Ghost buttons', withInfo(infoText.button)(() => (
+    <Button disabled={boolean('Disabled', false)}
+            ghost={boolean('ghost',true)}
+            type={select('Button type', btnType, 'primary')}
+            size={select('Button size', size, 'default')}
+            onClick={action('Button clicked!')}>
+        {text('Label', 'Hello Button')}
     </Button>
 )));
