@@ -12,10 +12,12 @@ export default class PButton extends React.Component {
             icon,
             shape,
             disabled,
+            block,
             onClick
         } = this.props
         console.log("props children are",this.props.children);
         return <Button
+            block={block}
             type={type}
             onClick={onClick}
             size={size}
