@@ -11,6 +11,13 @@ function loadStories() {
     require('../src/stories/divider.story');
     require('../src/stories/backtop.story');
     require('../src/stories/anchor.story');
+    require('../src/stories/steps.story');
+    require('../src/stories/pagination.story');
+    require('../src/stories/autocomplete.story');
+    require('../src/stories/datepicker.story');
+    require('../src/stories/avatar.story');
+    require('../src/stories/badge.story');
+    require('../src/stories/carousel.story');
 }
 
 configure(loadStories, module);

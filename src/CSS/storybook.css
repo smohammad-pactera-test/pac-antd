@@ -1,0 +1,37 @@
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 5px;
+    margin-top: 25px;
+}
+
+
+#root{
+    text-align: center;
+}
+
+
+.head-example{
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    background: #eee;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+    color: #fff;
+}
