@@ -28,10 +28,28 @@ body{
     text-align: center;
     height: 160px;
     line-height: 160px;
-    background: #364d79;
+    background: #271271;
     overflow: hidden;
 }
 
 .ant-carousel .slick-slide h3 {
     color: #fff;
 }
+
+.code-box {
+    border: 1px solid #ebedf0;
+    border-radius: 2px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 0 0 16px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.code-box-demo {
+    border-bottom: 1px solid #ebedf0;
+    padding: 42px 24px 50px;
+    color: rgba(0,0,0,.65);
+}
+

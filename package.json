@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "antd": "^3.9.2",
+    "moment": "^2.22.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-moment": "^0.7.9",
+    "react-scripts": "1.1.5",
+    "reqwest": "^2.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

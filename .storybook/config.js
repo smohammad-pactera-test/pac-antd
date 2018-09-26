@@ -18,6 +18,17 @@ function loadStories() {
     require('../src/stories/avatar.story');
     require('../src/stories/badge.story');
     require('../src/stories/carousel.story');
+    require('../src/stories/calendar.story');
+    require('../src/stories/collapse.story');
+    require('../src/stories/popover.story');
+    require('../src/stories/tooltip.story');
+    require('../src/stories/table.story');
+    require('../src/stories/tag.story');
+    require('../src/stories/tab.story');
+    require('../src/stories/timeline.story');
+    require('../src/stories/drawer.story');
+    require('../src/stories/modal.story');
+    require('../src/stories/input.story');
 }
 
 configure(loadStories, module);

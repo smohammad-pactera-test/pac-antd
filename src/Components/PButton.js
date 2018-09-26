@@ -6,16 +6,20 @@ import { Button } from 'antd';
 export default class PButton extends React.Component {
     render() {
         const {
-            title,
-            type,
-            size,
-            icon,
-            shape,
             disabled,
+            ghost,
+            href,
+            htmlType,
+            icon,
+            loading,
+            shape,
+            size,
+            target,
+            type,
+            onClick,
             block,
-            onClick
+            className
         } = this.props
-        console.log("props children are",this.props.children);
         return <Button
             block={block}
             type={type}
@@ -23,16 +27,33 @@ export default class PButton extends React.Component {
             size={size}
             icon={icon}
             shape={shape}
-            disabled={disabled}>{this.props.children}</Button>
+            disabled={disabled}
+            ghost={ghost}
+            htmlType={htmlType}
+            loading={loading}
+            target={target}
+            className={className}
+        >{this.props.children}</Button>
     }
 }
 
 PButton.defaultProps = {
-    type: 'primary',
-    disabled: false,
+    prefixCls: 'ant-btn',
+    loading: false,
+    ghost: false,
+    block: false,
     onClick: () => {}
+
 }
 
 PButton.propTypes = {
-    onClick: PropTypes.func.isRequired
+    type: PropTypes.string,
+    shape: PropTypes.oneOf(['circle', 'circle-outline']),
+    size: PropTypes.oneOf(['large', 'default', 'small']),
+    htmlType: PropTypes.oneOf(['submit', 'button', 'reset']),
+    onClick: PropTypes.func,
+    loading: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+    className: PropTypes.string,
+    icon: PropTypes.string,
+    block: PropTypes.bool,
 }

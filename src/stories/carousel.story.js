@@ -27,7 +27,7 @@ stories.add('basic carousel', withInfo({})(() => (
 
 stories.add('carasoul with effects', withInfo({})(() => (
     <PCarousel effect={select('Effects', EffectTypes, 'strollx')} vertical={boolean('vertical', false)} >
-        <div><h3>1</h3></div>
+        <div><img src="" alt=""/></div>
         <div><h3>2</h3></div>
         <div><h3>3</h3></div>
         <div><h3>4</h3></div>
