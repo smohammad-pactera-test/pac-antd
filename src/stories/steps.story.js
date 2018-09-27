@@ -3,8 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, boolean, button, number, object, select, text } from '@storybook/addon-knobs';
-import 'antd/dist/antd.css';
-
 import PSteps from '../Components/Navigation/PSteps';
 import PStep from '../Components/Navigation/PStep';
 

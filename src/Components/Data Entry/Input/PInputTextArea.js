@@ -5,6 +5,7 @@ import {Input} from 'antd';
 export default class PInputTextArea extends React.Component{
     render(){
         const {
+            onChange,
             autosize,
             defaultValue,
             value,
@@ -45,6 +46,7 @@ export default class PInputTextArea extends React.Component{
                           rows={rows}
                           spellcheck={spellcheck}
                           wrap={wrap}
+                          onChange={onChange}
 
           >
               {this.props.children}

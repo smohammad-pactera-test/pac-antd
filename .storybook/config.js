@@ -29,6 +29,8 @@ function loadStories() {
     require('../src/stories/drawer.story');
     require('../src/stories/modal.story');
     require('../src/stories/input.story');
+    require('../src/stories/grid.story');
+    require('../src/stories/slider.story');
 }
 
 configure(loadStories, module);

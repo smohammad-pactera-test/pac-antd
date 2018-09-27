@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, boolean, button, number, object, select, text } from '@storybook/addon-knobs';
-import 'antd/dist/antd.css';
 import PCheckbox from '../Components/Data Entry/PCheckbox'
 import PCheckboxGroup from '../Components/Data Entry/PCheckboxGroup'
 import PButton from "../Components/PButton";

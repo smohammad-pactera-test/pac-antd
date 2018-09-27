@@ -6,13 +6,13 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, boolean, button, number, object, select, text } from '@storybook/addon-knobs';
-import 'antd/dist/antd.css';
+
 
 import PSpinner from '../Components/PSpinner';
 import PAlert from '../Components/PAlert';
 import PIcon from '../Components/PIcon';
 
-import {AlertTypes} from '../stories/alert.story'
+import {AlertTypes} from './/alert.story'
 
 const spinnerSizes = {
      small:'small',

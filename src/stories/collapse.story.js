@@ -3,10 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, boolean, button, number, object, select, text } from '@storybook/addon-knobs';
-import 'antd/dist/antd.css';
 import PCollapse from '../Components/Data Display/PCollapse';
 import PPanel from '../Components/Data Display/PPanel';
-//import '../CSS/storybook.css';
 import {Collapse} from 'antd';
 
 
