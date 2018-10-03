@@ -70,3 +70,18 @@ body {
 .u-align-right{
     text-align: right;
 }
+ .login-form {
+    max-width: 300px;
+}
+.login-form-forgot {
+    float: right;
+}
+.login-form-button {
+    width: 100%;
+}
+.u-width-50{
+    width: 50%;
+}
+.u-center{
+    margin: 0 auto;
+}

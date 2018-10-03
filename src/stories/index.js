@@ -18,7 +18,7 @@ const btnType = {
     'danger': 'danger'
 };
 
-const size = {
+export const size = {
     'small': 'small',
     'large': 'large',
     'omitted': 'omitted'

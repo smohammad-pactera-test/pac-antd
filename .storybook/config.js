@@ -31,6 +31,15 @@ function loadStories() {
     require('../src/stories/input.story');
     require('../src/stories/grid.story');
     require('../src/stories/slider.story');
+    require('../src/stories/radio.story');
+    require('../src/stories/form.story');
+    require('../src/stories/skeleton.story');
+    require('../src/stories/list.story');
+    require('../src/stories/cards.story');
+    require('../src/stories/switch.story');
+    require('../src/stories/rate.story');
+    require('../src/stories/select.story');
+
 }
 
 configure(loadStories, module);
