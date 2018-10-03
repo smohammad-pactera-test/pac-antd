@@ -70,7 +70,7 @@ body {
 .u-align-right{
     text-align: right;
 }
- .login-form {
+.login-form {
     max-width: 300px;
 }
 .login-form-forgot {
@@ -84,4 +84,11 @@ body {
 }
 .u-center{
     margin: 0 auto;
+}
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1.0)), url(../Images/ani-kolleshi-640938-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
 }

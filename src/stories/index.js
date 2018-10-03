@@ -45,11 +45,13 @@ const stories = storiesOf('Button', module);
 stories.addDecorator(withKnobs);
 
 stories.add('Primary Buttons', withInfo(infoText.button)(() => (
+    <div className='header'>
     <PButton disabled={boolean('Disabled', false)}
             type={select('Button type', btnType, 'primary')}
              onClick={action('Button clicked!')}>
         {text('Label', 'Hello Button')}
     </PButton>
+    </div>
 )));
 
 stories.add('Buttons with sizes', withInfo(infoText.button)(() => (
