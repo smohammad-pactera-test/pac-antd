@@ -10,6 +10,7 @@ import PStep from '../Components/Navigation/PStep';
 const stories = storiesOf('Steps', module);
 stories.addDecorator(withKnobs);
 
+//basic step bar
 stories.add('Basic Step Bar', withInfo({})(() => (
     <PSteps current="1">
         <PStep title="Finished" description="This is a description." />
