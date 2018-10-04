@@ -6,7 +6,6 @@ import {Pagination} from 'antd';
 export default class PPagination extends React.Component{
 
     render(){
-
         const {
             total,
             current,
@@ -27,22 +26,22 @@ export default class PPagination extends React.Component{
 
 
         return(
-                <Pagination total={total}
-                            current={current}
-                            defaultCurrent={defaultCurrent}
-                            defaultPageSize={defaultPageSize}
-                            hideOnSinglePage={hideOnSinglePage}
-                            itemRender={itemRender}
-                            pageSize={pageSize}
-                            pageSizeOptions={pageSizeOptions}
-                            showQuickJumper={showQuickJumper}
-                            showSizeChanger={showSizeChanger}
-                            showTotal={showTotal}
-                            simple={simple}
-                            size={size}
-                            onChange={onChange}
-                            onShowSizeChange={onShowSizeChange}
-                />
+            <Pagination total={total}
+                        current={current}
+                        defaultCurrent={defaultCurrent}
+                        defaultPageSize={defaultPageSize}
+                        hideOnSinglePage={hideOnSinglePage}
+                        itemRender={itemRender}
+                        //pageSize={pageSize}
+                        pageSizeOptions={pageSizeOptions}
+                        showQuickJumper={showQuickJumper}
+                        showSizeChanger={showSizeChanger}
+                        showTotal={showTotal}
+                        simple={simple}
+                        size={size}
+                        onChange={onChange}
+                        onShowSizeChange={onShowSizeChange}
+            />
 
         );
     }
@@ -50,5 +49,14 @@ export default class PPagination extends React.Component{
 
 PPagination.defaultProps={
     prefixCls: 'ant-pagination',
-    selectPrefixCls: 'ant-select'
+    selectPrefixCls: 'ant-select',
+    current:0,
+    defaultCurrent:1,
+    defaultPageSize:10,
+    hideOnSinglePage:false,
+    pageSizeOptions:[10,20,30,40],
+    showQuickJumper:false,
+    showSizeChanger:false,
+    total:0,
+    pageSize:10
 }

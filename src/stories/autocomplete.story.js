@@ -18,6 +18,13 @@ function onSelect(value) {
 class Complete extends React.Component {
     state = {
         dataSource: [],
+        value:''
+    }
+
+    onChangeHandler = (e) => {
+        this.setState({
+            value:e
+        })
     }
 
     handleSearch = (value) => {
@@ -39,23 +46,13 @@ class Complete extends React.Component {
                 onSelect={onSelect}
                 onSearch={this.handleSearch}
                 placeholder="input here"
+                onChange={(e)=>this.onChangeHandler(e)}
+                value={this.state.value}
             />
         );
     }
 }
-
-const dataSource = ['12345', '23456', '34567'];
-stories.add('Auto Complete', withInfo({})(() => (
-
-    <PAutoComplete  dataSource={dataSource}
-                    style={{ width: 200 }}
-                    placeholder="input here" />
-
-)));
-
 stories.add('Based on the input Value', withInfo({})(() => (
-
     <Complete/>
-
 )));
 
