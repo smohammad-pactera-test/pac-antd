@@ -23,16 +23,29 @@ export default class PAutoComplete extends React.Component{
             onChange,
             onFocus,
             onSearch,
-            onSelect
+            onSelect,
+            style
         }=this.props;
 
         return (
             <AutoComplete
+                allowClear={allowClear}
+                autoFocus={autoFocus}
+                backfill={backfill}
                 dataSource={dataSource}
-                style={{ width: 200 }}
+                defaultActiveFirstOption={defaultActiveFirstOption}
+                defaultValue={defaultValue}
+                disabled={disabled}
+                style={style}
+                filterOption={filterOption}
+                optionLabelProp={optionLabelProp}
+                placeholder={placeholder}
+                value={value}
+                onBlur={onBlur}
+                onChange={onChange}
+                onFocus={onFocus}
                 onSelect={onSelect}
-                onSearch={this.handleSearch}
-                placeholder="input here"
+                onSearch={onSearch}
             />
         );
 
