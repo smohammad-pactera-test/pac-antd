@@ -1,0 +1,101 @@
+@import './theme.scss';
+
+html {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  padding: 25px;
+  margin-top: 25px;
+  color: $primary-color;
+}
+
+#root {
+  text-align: center;
+}
+
+
+.ant-btn.ant-btn-primary{
+    color: #fff;
+    background-color:orange;
+    border-color: pink;
+    width: 454px;
+}
+
+
+
+.head-example {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  background: #eee;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #271271;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+.code-box {
+  border: 1px solid #ebedf0;
+  border-radius: 2px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin: 0 0 16px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.code-box-demo {
+  border-bottom: 1px solid #ebedf0;
+  padding: 42px 24px 50px;
+  color: rgba(0, 0, 0, .65);
+}
+
+[class^="ant-col"] {
+  background-color: rgba(0, 160, 233, 0.7);
+  padding: 5px;
+}
+
+.ant-col-2:nth-child(odd), .ant-col-4:nth-child(odd), .ant-col-6:nth-child(odd), .ant-col-8:nth-child(odd), .ant-col-10:nth-child(odd), .ant-col-12:nth-child(odd),.ant-col-18:nth-child(odd) {
+  background-color: #00a0e9;
+}
+
+[class^="ant-col"]:nth-child(odd) {
+  background-color: #00a0e9;
+}
+
+.u-align-left{
+  text-align: left;
+}
+.u-align-right{
+  text-align: right;
+}
+.login-form {
+  max-width: 300px;
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+.u-width-50{
+  width: 50%;
+}
+.u-center{
+  margin: 0 auto;
+}
+
