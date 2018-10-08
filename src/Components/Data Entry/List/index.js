@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {List} from 'antd'
+import {List} from 'antd';
 
 
 export default class PList extends React.Component {
@@ -30,24 +30,24 @@ export default class PList extends React.Component {
 
         return (
             <List bordered={bordered}
-                  className={className}
-                  dataSource={dataSource}
-                  extra={extra}
-                  grid={grid}
-                  id={id}
-                  itemLayout={itemLayout}
-                  //loading={loading}
-                  loadMore={loadMore}
-                  pagination={pagination}
-                  prefixCls={prefixCls}
-                  rowKey={rowKey}
-                  renderItem={renderItem}
-                  size={size}
-                  split={true}
-                  header={header}
-                  footer={footer}
-                  locale={locale}
+                className={className}
+                dataSource={dataSource}
+                extra={extra}
+                grid={grid}
+                id={id}
+                itemLayout={itemLayout}
+                // loading={loading}
+                loadMore={loadMore}
+                pagination={pagination}
+                prefixCls={prefixCls}
+                rowKey={rowKey}
+                renderItem={renderItem}
+                size={size}
+                split={true}
+                header={header}
+                footer={footer}
+                locale={locale}
             />
-        )
+        );
     }
 }

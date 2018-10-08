@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Table} from 'antd'
+import {Table} from 'antd';
 
-export default class PTable extends  React.Component{
-    render(){
+export default class PTable extends  React.Component {
+    render() {
 
         const {
             dataSource,
@@ -23,9 +23,9 @@ export default class PTable extends  React.Component{
             footer,
             expandedRowRender,
             scroll
-        }=this.props;
+        } = this.props;
 
-        return(
+        return (
             <Table
                 dataSource={dataSource}
                 columns={columns}
@@ -45,6 +45,6 @@ export default class PTable extends  React.Component{
                 expandedRowRender={expandedRowRender}
                 scroll={scroll}
             />
-        )
+        );
     }
 }

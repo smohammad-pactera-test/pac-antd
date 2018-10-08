@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export default class PProgressbar extends React.Component {
 
 
-    render(){
+    render() {
 
         const {
             status,
@@ -19,31 +19,30 @@ export default class PProgressbar extends React.Component {
             trailColor,
             format,
             gapDegree,
-        }= this.props
+        } = this.props;
 
-        return(
+        return (
             <Progress status={status}
-                      type={type}
-                      showInfo={showInfo}
-                      percent={percent}
-                      width={width}
-                      strokeWidth={strokeWidth}
-                      strokeLinecap={strokeLinecap}
-                      strokeColor={strokeColor}
-                      trailColor={trailColor}
-                      format={format}
-                      gapDegree={gapDegree}
+                type={type}
+                showInfo={showInfo}
+                percent={percent}
+                width={width}
+                strokeWidth={strokeWidth}
+                strokeLinecap={strokeLinecap}
+                strokeColor={strokeColor}
+                trailColor={trailColor}
+                format={format}
+                gapDegree={gapDegree}
 
             />
         );
 
 
-
     }
 }
 
-PProgressbar.defaultProps ={
-    format:()=>{},
+PProgressbar.defaultProps = {
+    format:() => {},
     gapDegree:0,
     gapPosition:'top',
     percent:0,
@@ -52,4 +51,4 @@ PProgressbar.defaultProps ={
     strokeLinecap:'round',
     successPercent:0,
     type:'line'
-}
+};

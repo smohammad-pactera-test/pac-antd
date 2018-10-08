@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Col} from 'antd';
 
-export default class PCol extends React.Component{
-    render(){
+export default class PCol extends React.Component {
+    render() {
 
         const {
             offset,
@@ -17,22 +17,22 @@ export default class PCol extends React.Component{
             lg,
             xl,
             xxl
-        }=this.props;
+        } = this.props;
 
-        return(
-          <Col offset={offset}
-               order={order}
-               pull={pull}
-               push={push}
-               span={span}
-               xs={xs}
-               sm={sm}
-               md={md}
-               lg={lg}
-               xl={xl}
-               xxl={xxl}>
-              {this.props.children}
-          </Col>
+        return (
+            <Col offset={offset}
+                order={order}
+                pull={pull}
+                push={push}
+                span={span}
+                xs={xs}
+                sm={sm}
+                md={md}
+                lg={lg}
+                xl={xl}
+                xxl={xxl}>
+                {this.props.children}
+            </Col>
         );
     }
 }

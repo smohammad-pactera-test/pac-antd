@@ -21,11 +21,11 @@ export default class PStep extends React.Component {
         return (
 
             <Steps.Step description={description}
-                        icon={icon}
-                        status={status}
-                        title={title}>
+                icon={icon}
+                status={status}
+                title={title}>
                 {this.props.children}
             </Steps.Step>
-        )
+        );
     }
 }

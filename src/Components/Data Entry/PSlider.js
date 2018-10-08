@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Slider} from 'antd';
 
-export default class PSlider extends React.Component{
-    render(){
+export default class PSlider extends React.Component {
+    render() {
 
         const {
             autoFocus,
@@ -21,24 +21,24 @@ export default class PSlider extends React.Component{
             onAfterChange,
             onChange,
             min
-        }=this.props;
+        } = this.props;
 
-        return(
+        return (
             <Slider autoFocus={autoFocus}
-                    defaultValue={defaultValue}
-                    disabled={disabled}
-                    dots={dots}
-                    included={included}
-                    marks={marks}
-                    max={max}
-                    min={min}
-                    range={range}
-                    step={step}
-                    tipFormatter={tipFormatter}
-                    value={value}
-                    vertical={vertical}
-                    onAfterChange={onAfterChange}
-                    onChange={onChange}
+                defaultValue={defaultValue}
+                disabled={disabled}
+                dots={dots}
+                included={included}
+                marks={marks}
+                max={max}
+                min={min}
+                range={range}
+                step={step}
+                tipFormatter={tipFormatter}
+                value={value}
+                vertical={vertical}
+                onAfterChange={onAfterChange}
+                onChange={onChange}
             />
         );
     }

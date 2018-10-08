@@ -17,12 +17,12 @@ export default class PListItem extends React.Component {
 
         return (
             <List.Item xs={xs}
-                       xl={xl}
-                       sm={sm}
-                       lg={lg}
-                       xxl={xxl}
-                       md={md}
-                       column={column}>
+                xl={xl}
+                sm={sm}
+                lg={lg}
+                xxl={xxl}
+                md={md}
+                column={column}>
                 {this.props.children}
             </List.Item>
         );

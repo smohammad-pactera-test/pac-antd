@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Badge} from 'antd'
+import {Badge} from 'antd';
 
-export default class PBadge extends React.Component{
+export default class PBadge extends React.Component {
 
-    render(){
+    render() {
         const {
             count,
             showZero,
@@ -14,19 +14,19 @@ export default class PBadge extends React.Component{
             status,
             text,
             title
-        }=this.props;
-        return(
-        <Badge count={count}
-               showZero={showZero}
-               dot={dot}
-               overflowCount={overflowCount}
-               offset={offset}
-               status={status}
-               text={text}
-               title={title}
-        >
-            {this.props.children}
-        </Badge>
+        } = this.props;
+        return (
+            <Badge count={count}
+                showZero={showZero}
+                dot={dot}
+                overflowCount={overflowCount}
+                offset={offset}
+                status={status}
+                text={text}
+                title={title}
+            >
+                {this.props.children}
+            </Badge>
         );
     }
 }

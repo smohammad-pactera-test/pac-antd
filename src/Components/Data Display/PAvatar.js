@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Avatar} from 'antd'
+import {Avatar} from 'antd';
 
-export default class PAvatar extends React.Component{
+export default class PAvatar extends React.Component {
 
-    render(){
+    render() {
 
         const {
             icon,
@@ -13,15 +13,15 @@ export default class PAvatar extends React.Component{
             src,
             alt,
             onError
-        }=this.props;
+        } = this.props;
 
-        return(
+        return (
             <Avatar icon={icon}
-                    shape={shape}
-                    size={size}
-                    src={src}
-                    alt={alt}
-                    onError={onError}>
+                shape={shape}
+                size={size}
+                src={src}
+                alt={alt}
+                onError={onError}>
                 {this.props.children}
             </Avatar>
         );

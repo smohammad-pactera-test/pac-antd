@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import  {Collapse}  from 'antd'
+import  {Collapse}  from 'antd';
 
 
-export default class PCollapse extends React.Component{
-    render(){
+export default class PCollapse extends React.Component {
+    render() {
 
         const {
 
@@ -15,22 +15,22 @@ export default class PCollapse extends React.Component{
             onChange,
             destroyInactivePanel
 
-        }=this.props;
+        } = this.props;
 
 
-    return(
-        <Collapse accordion={accordion}
-                  activeKey={activeKey}
-                  bordered={bordered}
-                  defaultActiveKey={defaultActiveKey}
-                  onChange={onChange}
-                  destroyInactivePanel={destroyInactivePanel}
+        return (
+            <Collapse accordion={accordion}
+                activeKey={activeKey}
+                bordered={bordered}
+                defaultActiveKey={defaultActiveKey}
+                onChange={onChange}
+                destroyInactivePanel={destroyInactivePanel}
 
-        >
-            {this.props.children}
-        </Collapse>
+            >
+                {this.props.children}
+            </Collapse>
 
-    );
+        );
 
 
     }

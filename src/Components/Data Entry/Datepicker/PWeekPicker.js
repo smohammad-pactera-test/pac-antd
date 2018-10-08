@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {DatePicker} from 'antd';
 
-export default class PWeekPicker extends React.Component{
+export default class PWeekPicker extends React.Component {
 
-    render(){
+    render() {
 
         const {WeekPicker} = DatePicker;
 
-        return(
+        return (
 
             <WeekPicker/>
 

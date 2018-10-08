@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {BackTop} from 'antd';
 
-export default class PBackTop extends React.Component{
+export default class PBackTop extends React.Component {
 
 
-    render(){
+    render() {
 
         const {
 
@@ -13,23 +13,23 @@ export default class PBackTop extends React.Component{
             onClick,
             target
 
-        }= this.props;
+        } = this.props;
 
-        return(
+        return (
             <BackTop visibilityHeight={visibilityHeight}
-                     onClick={onClick}
-                     target={target}/>
+                onClick={onClick}
+                target={target}/>
         );
     }
 }
 
-PBackTop.defaultProps={
+PBackTop.defaultProps = {
     visibilityHeight:400,
-    target:()=>window
-}
+    target:() => window
+};
 
-PBackTop.PropTypes= {
+PBackTop.PropTypes = {
     target:PropTypes.func,
     visibilityHeight:PropTypes.number,
     onClick:PropTypes.func
-}
+};

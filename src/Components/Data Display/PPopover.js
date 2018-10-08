@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Popover} from 'antd';
 
-export default class PPopover extends React.Component{
+export default class PPopover extends React.Component {
 
-    render(){
+    render() {
 
         const {
             content,
             title
-        }= this.props;
+        } = this.props;
 
 
-        return(
-        <Popover title={title} content={content}>
-            {this.props.children}
-        </Popover>
+        return (
+            <Popover title={title} content={content}>
+                {this.props.children}
+            </Popover>
         );
     }
 }

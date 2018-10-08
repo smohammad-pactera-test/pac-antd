@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import {Divider} from 'antd';
 
 
+export default class PDivider extends React.Component {
 
-export default class PDivider extends React.Component{
-
-    render(){
+    render() {
 
         const {
             className,
@@ -16,15 +15,15 @@ export default class PDivider extends React.Component{
             type
         } = this.props;
 
-        return(
+        return (
 
-                <Divider className={className}
-                         dashed={dashed}
-                         orientation={orientation}
-                         style={style}
-                         type={type}>
-                    {this.props.children}
-                </Divider>
+            <Divider className={className}
+                dashed={dashed}
+                orientation={orientation}
+                style={style}
+                type={type}>
+                {this.props.children}
+            </Divider>
 
         );
     }

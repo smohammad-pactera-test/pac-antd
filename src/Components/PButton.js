@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { Button } from 'antd';
 // import 'antd/lib/button/style/css'
 
@@ -19,7 +19,7 @@ export default class PButton extends React.Component {
             onClick,
             block,
             className
-        } = this.props
+        } = this.props;
         return <Button
             block={block}
             type={type}
@@ -33,7 +33,7 @@ export default class PButton extends React.Component {
             loading={loading}
             target={target}
             className={className}
-        >{this.props.children}</Button>
+        >{this.props.children}</Button>;
     }
 }
 
@@ -44,7 +44,7 @@ PButton.defaultProps = {
     block: false,
     onClick: () => {}
 
-}
+};
 
 PButton.propTypes = {
     type: PropTypes.string,
@@ -56,4 +56,4 @@ PButton.propTypes = {
     className: PropTypes.string,
     icon: PropTypes.string,
     block: PropTypes.bool,
-}
+};

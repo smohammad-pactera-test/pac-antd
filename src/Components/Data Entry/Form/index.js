@@ -14,9 +14,9 @@ class PForm extends React.Component {
 
         return (
             <Form form={form}
-                  hideRequiredMark={hideRequiredMark}
-                  layout={layout}
-                  onSubmit={onSubmit}>
+                hideRequiredMark={hideRequiredMark}
+                layout={layout}
+                onSubmit={onSubmit}>
                 {this.props.children}
             </Form>
         );
@@ -27,4 +27,4 @@ const PFormCreate = Form.create;
 export {
     PFormCreate,
     PForm
-}
+};

@@ -3,10 +3,9 @@ import PropType from 'prop-types';
 import {Tooltip} from 'antd';
 
 
+export default class PTooltip extends React.Component {
 
-export default class PTooltip extends React.Component{
-
-    render(){
+    render() {
 
         const {
             title,
@@ -22,23 +21,23 @@ export default class PTooltip extends React.Component{
             trigger,
             visible,
             onVisibleChange
-        }=this.props;
+        } = this.props;
 
 
-        return(
+        return (
             <Tooltip title={title}
-                     // arrowPointAtCenter={arrowPointAtCenter}
-                     // autoAdjustOverflow={autoAdjustOverflow}
-                     // defaultVisible={defaultVisible}
-                     // getPopupContainer={getPopupContainer}
-                     // mouseEnterDelay={mouseEnterDelay}
-                     // mouseLeaveDelay={mouseLeaveDelay}
-                     // overlayClassName={overlayClassName}
-                     // overlayStyle={overlayStyle}
-                     // placement={placement}
-                     // trigger={trigger}
-                     // visible={visible}
-                     // onVisibleChange={onVisibleChange}
+                // arrowPointAtCenter={arrowPointAtCenter}
+                // autoAdjustOverflow={autoAdjustOverflow}
+                // defaultVisible={defaultVisible}
+                // getPopupContainer={getPopupContainer}
+                // mouseEnterDelay={mouseEnterDelay}
+                // mouseLeaveDelay={mouseLeaveDelay}
+                // overlayClassName={overlayClassName}
+                // overlayStyle={overlayStyle}
+                // placement={placement}
+                // trigger={trigger}
+                // visible={visible}
+                // onVisibleChange={onVisibleChange}
             >
                 {this.props.children}
             </Tooltip>
@@ -46,7 +45,7 @@ export default class PTooltip extends React.Component{
     }
 }
 
-PTooltip.defaultProps={
+PTooltip.defaultProps = {
     prefixCls: 'ant-tooltip',
     placement: 'top',
     transitionName: 'zoom-big-fast',
@@ -54,4 +53,4 @@ PTooltip.defaultProps={
     mouseLeaveDelay: 0.1,
     arrowPointAtCenter: false,
     autoAdjustOverflow: true,
-}
+};

@@ -28,25 +28,25 @@ export default class PInput extends React.Component {
         } = this.props;
         return (
             <Input type={type}
-                   id={id}
-                   size={size}
-                   maxLength={maxLength}
-                   disabled={disabled}
-                   value={value}
-                   defaultValue={defaultValue}
-                   className={className}
-                   addonBefore={addonBefore}
-                   addonAfter={addonAfter}
-                   prefixCls={prefixCls}
-                   onPressEnter={onPressEnter}
-                   onKeyDown={onKeyDown}
-                   onKeyUp={onKeyUp}
-                   onFocus={onFocus}
-                   onBlur={onBlur}
-                   prefix={prefix}
-                   suffix={suffix}
-                   onChange={onChange}
-                   placeholder={placeholder}
+                id={id}
+                size={size}
+                maxLength={maxLength}
+                disabled={disabled}
+                value={value}
+                defaultValue={defaultValue}
+                className={className}
+                addonBefore={addonBefore}
+                addonAfter={addonAfter}
+                prefixCls={prefixCls}
+                onPressEnter={onPressEnter}
+                onKeyDown={onKeyDown}
+                onKeyUp={onKeyUp}
+                onFocus={onFocus}
+                onBlur={onBlur}
+                prefix={prefix}
+                suffix={suffix}
+                onChange={onChange}
+                placeholder={placeholder}
             />
         );
     }

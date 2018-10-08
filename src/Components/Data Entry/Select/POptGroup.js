@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Select} from 'antd';
 
-export default class POptGroup extends React.Component{
+export default class POptGroup extends React.Component {
     render() {
 
         const {
@@ -12,7 +12,7 @@ export default class POptGroup extends React.Component{
 
         return (
             <Select.OptGroup key={key}
-                             label={label} >
+                label={label} >
                 {this.props.children}
             </Select.OptGroup>
         );

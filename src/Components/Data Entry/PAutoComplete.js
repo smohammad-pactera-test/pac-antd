@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import {AutoComplete} from 'antd';
 
 
-export default class PAutoComplete extends React.Component{
+export default class PAutoComplete extends React.Component {
 
-    render(){
+    render() {
 
         const {
             allowClear,
@@ -25,7 +25,7 @@ export default class PAutoComplete extends React.Component{
             onSearch,
             onSelect,
             style
-        }=this.props;
+        } = this.props;
 
         return (
             <AutoComplete

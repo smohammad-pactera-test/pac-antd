@@ -1,10 +1,10 @@
 import React from 'react';
 import {Alert} from 'antd';
 
-export default class PAlert extends React.Component{
+export default class PAlert extends React.Component {
 
 
-    render(){
+    render() {
 
         const {
 
@@ -22,7 +22,7 @@ export default class PAlert extends React.Component{
         } = this.props;
 
 
-        return(
+        return (
             <Alert
                 afterClose={afterClose}
                 banner={banner}
@@ -37,7 +37,7 @@ export default class PAlert extends React.Component{
             >
                 {this.props.children}
             </Alert>
-        )
+        );
 
     }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Drawer} from 'antd'
+import {Drawer} from 'antd';
 
 export default class PDrawer extends React.Component {
     render() {

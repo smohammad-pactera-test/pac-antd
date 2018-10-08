@@ -7,3 +7,11 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
+import ser './sdsfs/se'
+
+
+export {
+    sef,
+    dfs
+}
+

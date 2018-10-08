@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Anchor } from 'antd';
 
-export default class PAnchor extends React.Component{
+export default class PAnchor extends React.Component {
 
-    render(){
+    render() {
 
         const {
             affix,
@@ -15,32 +15,32 @@ export default class PAnchor extends React.Component{
             showInkInFixed,
             onClick
 
-        }= this.props;
+        } = this.props;
 
 
-        return(
+        return (
             <Anchor affix={affix}
-                    bounds={bounds}
-                    getContainer={getContainer}
-                    offsetBottom={offsetBottom}
-                    offsetTop={offsetTop}
-                    showInkInFixed={showInkInFixed}
-                    onClick={onClick}>
-                   {this.props.children}
+                bounds={bounds}
+                getContainer={getContainer}
+                offsetBottom={offsetBottom}
+                offsetTop={offsetTop}
+                showInkInFixed={showInkInFixed}
+                onClick={onClick}>
+                {this.props.children}
             </Anchor>
         );
     }
 }
 
-PAnchor.defaultProps={
+PAnchor.defaultProps = {
     affix:true,
     bounds:5,
-    getContainer:()=>window,
+    getContainer:() => window,
     offsetTop:0,
     showInkInFixed:false
-}
+};
 
-PAnchor.PropTypes={
+PAnchor.PropTypes = {
     affix:PropTypes.bool,
     bounds:PropTypes.number,
     getContainer:PropTypes.func,
@@ -48,4 +48,4 @@ PAnchor.PropTypes={
     showInkInFixed:PropTypes.bool,
     offsetBottom:PropTypes.bool,
     onClick:PropTypes.func
-}
+};

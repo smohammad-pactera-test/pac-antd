@@ -17,11 +17,11 @@ export default class PCheckbox extends React.Component {
 
         return (
             <Checkbox autoFocus={autoFocus}
-                      checked={checked}
-                      defaultChecked={defaultChecked}
-                      disabled={disabled}
-                      indeterminate={indeterminate}
-                      onChange={onChange}
+                checked={checked}
+                defaultChecked={defaultChecked}
+                disabled={disabled}
+                indeterminate={indeterminate}
+                onChange={onChange}
             >
                 {this.props.children}
             </Checkbox>
@@ -35,4 +35,4 @@ PCheckbox.defaultProps = {
     defaultChecked: false,
     disabled: false,
     indeterminate: false
-}
+};

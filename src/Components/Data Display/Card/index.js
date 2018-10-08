@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'antd';
 
-export default class PCard extends React.Component{
-    render(){
+export default class PCard extends React.Component {
+    render() {
 
         const {
             actions,
@@ -23,22 +23,22 @@ export default class PCard extends React.Component{
             style
         } = this.props;
 
-        return(
+        return (
             <Card actions={actions}
-                  activeTabKey={activeTabKey}
-                  headStyle={headStyle}
-                  bodyStyle={bodyStyle}
-                  bordered={bordered}
-                  cover={cover}
-                  style={style}
-                  defaultActiveTabKey={defaultActiveTabKey}
-                  extra={extra}
-                  hoverable={hoverable}
-                  loading={loading}
-                  tabList={tabList}
-                  title={title}
-                  type={type}
-                  onTabChange={onTabChange}>
+                activeTabKey={activeTabKey}
+                headStyle={headStyle}
+                bodyStyle={bodyStyle}
+                bordered={bordered}
+                cover={cover}
+                style={style}
+                defaultActiveTabKey={defaultActiveTabKey}
+                extra={extra}
+                hoverable={hoverable}
+                loading={loading}
+                tabList={tabList}
+                title={title}
+                type={type}
+                onTabChange={onTabChange}>
                 {this.props.children}
             </Card>
         );

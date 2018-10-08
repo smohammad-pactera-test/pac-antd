@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {DatePicker} from 'antd'
+import {DatePicker} from 'antd';
 
 
-export default class PMonthPicker extends React.Component{
+export default class PMonthPicker extends React.Component {
 
-    render(){
+    render() {
 
         const {MonthPicker} = DatePicker;
         const {
@@ -32,31 +32,31 @@ export default class PMonthPicker extends React.Component{
             renderExtraFooter,
             value,
             onChange
-        }=this.props;
-        return(
+        } = this.props;
+        return (
             <MonthPicker allowClear={allowClear}
-                         autoFocus={autoFocus}
-                         className={className}
-                         dateRender={dateRender}
-                         disabled={disabled}
-                         disabledDate={disabledDate}
-                         dropdownClassName={dropdownClassName}
-                         getCalendarContainer={getCalendarContainer}
-                         locale={locale}
-                         mode={mode}
-                         //open={open}
-                         //placeholder={placeholder}
-                         popupStyle={popupStyle}
-                         size={size}
-                         style={style}
-                         onOpenChange={onOpenChange}
-                         onPanelChange={onPanelChange}
-                         defaultValue={defaultValue}
-                         format={format}
-                         monthCellContentRender={monthCellContentRender}
-                         renderExtraFooter={renderExtraFooter}
-                         //value={value}
-                         onChange={onChange}
+                autoFocus={autoFocus}
+                className={className}
+                dateRender={dateRender}
+                disabled={disabled}
+                disabledDate={disabledDate}
+                dropdownClassName={dropdownClassName}
+                getCalendarContainer={getCalendarContainer}
+                locale={locale}
+                mode={mode}
+                // open={open}
+                // placeholder={placeholder}
+                popupStyle={popupStyle}
+                size={size}
+                style={style}
+                onOpenChange={onOpenChange}
+                onPanelChange={onPanelChange}
+                defaultValue={defaultValue}
+                format={format}
+                monthCellContentRender={monthCellContentRender}
+                renderExtraFooter={renderExtraFooter}
+                // value={value}
+                onChange={onChange}
             />
         );
     }

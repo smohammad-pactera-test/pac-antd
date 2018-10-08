@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Checkbox} from 'antd'
+import {Checkbox} from 'antd';
 
 export default class PCheckboxGroup extends React.Component {
     render() {
@@ -13,10 +13,10 @@ export default class PCheckboxGroup extends React.Component {
         } = this.props;
         return (
             <Checkbox.Group defaultValue={defaultValue}
-                            disabled={disabled}
-                            options={options}
-                            value={value}
-                            onChange={onChange}/>
+                disabled={disabled}
+                options={options}
+                value={value}
+                onChange={onChange}/>
         );
 
     }
