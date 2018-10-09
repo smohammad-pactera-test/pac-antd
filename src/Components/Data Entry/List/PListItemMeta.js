@@ -22,3 +22,15 @@ export default class PListItemMeta extends React.Component {
     }
 
 }
+PListItemMeta.propTypes = {
+    avatar:PropTypes.node,
+    children:PropTypes.element,
+    description:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    title:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ])
+};

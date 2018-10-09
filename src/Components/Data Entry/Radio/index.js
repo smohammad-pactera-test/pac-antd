@@ -35,3 +35,21 @@ export default class PRadio extends React.Component {
         );
     }
 }
+PRadio.propTypes = {
+    autoFocus:PropTypes.bool,
+    checked:PropTypes.bool,
+    defaultChecked:PropTypes.bool,
+    disabled:PropTypes.bool,
+    value:PropTypes.any,
+    onBlur:PropTypes.func,
+    onChange:PropTypes.func,
+    style:PropTypes.object,
+    onFocus:PropTypes.object,
+    children:PropTypes.instanceOf(Element)
+};
+
+PRadio.defaultProps = {
+    autoFocus:false,
+    defaultChecked:false,
+    disabled:false
+};

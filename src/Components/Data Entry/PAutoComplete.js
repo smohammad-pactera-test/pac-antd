@@ -51,3 +51,40 @@ export default class PAutoComplete extends React.Component {
 
     }
 }
+
+PAutoComplete.propTypes = {
+    allowClear:PropTypes.bool,
+    autoFocus:PropTypes.bool,
+    backfill:PropTypes.bool,
+    dataSource:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object
+    ]),
+    defaultActiveFirstOption:PropTypes.bool,
+    defaultValue:PropTypes.any,
+    disabled:PropTypes.bool,
+    filterOption:PropTypes.bool,
+    optionLabelProp:PropTypes.string,
+    placeholder:PropTypes.string,
+    value:PropTypes.any,
+    onBlur:PropTypes.func,
+    onChange:PropTypes.func,
+    onFocus:PropTypes.func,
+    onSearch:PropTypes.func,
+    onSelect:PropTypes.func,
+    defaultOpen:PropTypes.bool,
+    open:PropTypes.bool,
+    onDropdownVisibleChange:PropTypes.func,
+    style:PropTypes.object
+};
+
+PAutoComplete.defaultProps = {
+    allowClear:false,
+    autoFocus:false,
+    backfill:false,
+    defaultActiveFirstOption:true,
+    disabled:false,
+    filterOption:true,
+    // optionLabelProp:children
+};
+

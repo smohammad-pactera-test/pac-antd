@@ -47,6 +47,26 @@ export default class PPagination extends React.Component {
     }
 }
 
+PPagination.propTypes = {
+    current:PropTypes.number,
+    defaultCurrent:PropTypes.number,
+    defaultPageSize:PropTypes.number,
+    hideOnSinglePage:PropTypes.bool,
+    itemRender:PropTypes.node,
+    pageSize:PropTypes.number,
+    pageSizeOptions:PropTypes.arrayOf(PropTypes.string),
+    showQuickJumper:PropTypes.bool,
+    showSizeChanger:PropTypes.bool,
+    showTotal:PropTypes.func,
+    simple:PropTypes.bool,
+    size:PropTypes.string,
+    total:PropTypes.number,
+    onChange:PropTypes.func,
+    onShowSizeChange:PropTypes.func
+
+};
+
+
 PPagination.defaultProps = {
     prefixCls: 'ant-pagination',
     selectPrefixCls: 'ant-select',

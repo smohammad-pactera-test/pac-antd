@@ -21,3 +21,17 @@ export default class PCheckboxGroup extends React.Component {
 
     }
 }
+PCheckboxGroup.propTypes = {
+    defaultValue:PropTypes.arrayOf(PropTypes.string),
+    disabled:PropTypes.bool,
+    options:PropTypes.arrayOf(PropTypes.string),
+    value:PropTypes.arrayOf(PropTypes.string),
+    onChange:PropTypes.func
+};
+
+PCheckboxGroup.defaultProps = {
+    defaultValue:[],
+    disabled:false,
+    options:[],
+    value:[]
+};

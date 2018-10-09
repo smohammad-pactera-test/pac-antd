@@ -28,3 +28,23 @@ export default class PAvatar extends React.Component {
     }
 
 }
+
+PAvatar.propTypes = {
+    icon:PropTypes.string,
+    shape:PropTypes.oneOf([
+        'circle',
+        'square'
+    ]),
+    size:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string
+    ]),
+    src:PropTypes.string,
+    alt:PropTypes.string,
+    onError:PropTypes.bool
+};
+
+PAvatar.defaultProps = {
+    shape:'circle',
+    size:'default'
+};

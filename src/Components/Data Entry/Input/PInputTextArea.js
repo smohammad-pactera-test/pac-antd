@@ -54,3 +54,34 @@ export default class PInputTextArea extends React.Component {
         );
     }
 }
+PInputTextArea.propTypes = {
+    addonAfter:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    addonBefore:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    defaultValue:PropTypes.string,
+    disabled:PropTypes.bool,
+    id:PropTypes.string,
+    prefix:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    size:PropTypes.string,
+    suffix:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    type:PropTypes.string,
+    value:PropTypes.string,
+    onChange:PropTypes.func,
+    onPressEnter:PropTypes.func,
+    autosize:PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.object
+    ]),
+
+};

@@ -31,15 +31,6 @@ export default class PAnchor extends React.Component {
         );
     }
 }
-
-PAnchor.defaultProps = {
-    affix:true,
-    bounds:5,
-    getContainer:() => window,
-    offsetTop:0,
-    showInkInFixed:false
-};
-
 PAnchor.PropTypes = {
     affix:PropTypes.bool,
     bounds:PropTypes.number,
@@ -49,3 +40,12 @@ PAnchor.PropTypes = {
     offsetBottom:PropTypes.bool,
     onClick:PropTypes.func
 };
+
+PAnchor.defaultProps = {
+    affix:true,
+    bounds:5,
+    getContainer:() => window,
+    offsetTop:0,
+    showInkInFixed:false
+};
+

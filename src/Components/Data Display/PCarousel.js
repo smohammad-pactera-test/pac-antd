@@ -33,3 +33,22 @@ export default class PCarousel extends React.Component {
         );
     }
 }
+PCarousel.propTypes = {
+    afterChange:PropTypes.func,
+    autoplay:PropTypes.bool,
+    beforeChange:PropTypes.func,
+    dots:PropTypes.bool,
+    easing:PropTypes.string,
+    effect:PropTypes.oneOf([
+        'scrollx',
+        'fade'
+    ])
+};
+
+PCarousel.defaultProps = {
+    autoplay:false,
+    dots:true,
+    easing:'linear',
+    effect:'scrollx',
+    vertical:false
+};

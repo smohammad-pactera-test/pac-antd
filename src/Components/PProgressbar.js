@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 export default class PProgressbar extends React.Component {
 
-
     render() {
 
         const {
@@ -41,6 +40,23 @@ export default class PProgressbar extends React.Component {
     }
 }
 
+PProgressbar.propTypes = {
+    format:PropTypes.func,
+    gapDegree:PropTypes.number,
+    gapPosition:PropTypes.string,
+    percent:PropTypes.number,
+    showInfo:PropTypes.bool,
+    status:PropTypes.string,
+    strokeWidth:PropTypes.number,
+    strokeLinecap:PropTypes.number,
+    strokeColor:PropTypes.string,
+    successPercent:PropTypes.number,
+    type:PropTypes.string,
+    width:PropTypes.number,
+    trailColor:PropTypes.string
+};
+
+
 PProgressbar.defaultProps = {
     format:() => {},
     gapDegree:0,
@@ -50,5 +66,6 @@ PProgressbar.defaultProps = {
     strokeWidth:10,
     strokeLinecap:'round',
     successPercent:0,
-    type:'line'
+    type:'line',
+    trailColor: '#f3f3f3'
 };

@@ -26,9 +26,14 @@ export default class PIcon extends React.Component {
 
 PIcon.defaultProps = {
     type: 'omitted',
-
+    spin:'false'
 };
 
 PIcon.propTypes = {
-    icon: PropTypes.string.isRequired
+    type:PropTypes.string,
+    style:PropTypes.object,
+    theme:PropTypes.oneOf(['filled', 'circle-filled','twoTone']),
+    spin:PropTypes.bool,
+    component:PropTypes.node,
+    twoToneColor:PropTypes.string
 };

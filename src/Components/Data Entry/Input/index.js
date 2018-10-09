@@ -51,3 +51,34 @@ export default class PInput extends React.Component {
         );
     }
 }
+PInput.propTypes = {
+    addonAfter:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    addonBefore:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    defaultValue:PropTypes.string,
+    disabled:PropTypes.bool,
+    id:PropTypes.string,
+    prefix:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    size:PropTypes.string,
+    suffix:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    type:PropTypes.string,
+    value:PropTypes.string,
+    onChange:PropTypes.func,
+    onPressEnter:PropTypes.func
+};
+PInput.defaultProps = {
+    disabled:false,
+    size:'default',
+    type:'text'
+};

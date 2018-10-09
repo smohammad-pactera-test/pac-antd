@@ -30,3 +30,30 @@ export default class PBadge extends React.Component {
         );
     }
 }
+
+PBadge.propTypes = {
+    count:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.node
+    ]),
+    dot:PropTypes.bool,
+    offset:PropTypes.arrayOf(PropTypes.number),
+    overflowCount:PropTypes.number,
+    showZero:PropTypes.bool,
+    status:PropTypes.oneOf([
+        'success',
+        'processing',
+        'default',
+        'error',
+        'warning'
+    ]),
+    text:PropTypes.string,
+    title:PropTypes.string
+};
+
+PBadge.defaultProps = {
+    dot:false,
+    overflowCount:99,
+    showZero:false,
+    title:'count'
+};

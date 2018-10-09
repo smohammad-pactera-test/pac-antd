@@ -28,7 +28,24 @@ export default class PRadioGroup extends  React.Component {
                 {this.props.children}
             </Radio.Group>
         );
-
-
     }
 }
+
+PRadioGroup.propTypes = {
+    defaultValue:PropTypes.any,
+    disabled:PropTypes.bool,
+    name:PropTypes.string,
+    options:PropTypes.any,
+    size:PropTypes.oneOf([
+        'large',
+        'default',
+        'small'
+    ]),
+    value:PropTypes.any,
+    onChange:PropTypes.func,
+    buttonStyle:PropTypes.oneOf([
+        'outline',
+        'solid'
+    ]),
+    children:PropTypes.element
+};

@@ -48,3 +48,39 @@ export default class PTable extends  React.Component {
         );
     }
 }
+Table.propTypes = {
+    bordered:PropTypes.bool,
+    childrenColumnName:PropTypes.arrayOf(PropTypes.string),
+    columns:PropTypes.any,
+    components:PropTypes.any,
+    // dataSource:PropTypes.array(PropTypes.any),
+    defaultExpandAllRows:PropTypes.bool,
+    defaultExpandedRowKeys:PropTypes.arrayOf(PropTypes.string),
+    expandedRowKeys:PropTypes.arrayOf(PropTypes.string),
+    expandedRowRender:PropTypes.node,
+    expandRowByClick:PropTypes.bool,
+    footer:PropTypes.func,
+    indentSize:PropTypes.number,
+    loading:PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.object
+    ]),
+    locale:PropTypes.object,
+    pagination:PropTypes.object,
+    rowClassName:PropTypes.any,
+    rowKey:PropTypes.any,
+    rowSelection:PropTypes.object,
+    scroll:{ x: PropTypes.number || PropTypes.bool, y: PropTypes.number },
+    showHeader:PropTypes.bool,
+    size:PropTypes.oneOf([
+        'default',
+        'middle',
+        'small'
+    ]),
+    title:PropTypes.func,
+    onChange:PropTypes.func,
+    onExpand:PropTypes.func,
+    onExpandedRowsChange:PropTypes.func,
+    onHeaderRow:PropTypes.func,
+    onRow:PropTypes.func
+};

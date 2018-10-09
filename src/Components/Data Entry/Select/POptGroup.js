@@ -18,3 +18,11 @@ export default class POptGroup extends React.Component {
         );
     }
 }
+
+POptGroup.propTypes = {
+    key:PropTypes.string,
+    label:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.element
+    ])
+};

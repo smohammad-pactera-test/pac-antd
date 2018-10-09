@@ -36,3 +36,13 @@ PCheckbox.defaultProps = {
     disabled: false,
     indeterminate: false
 };
+
+PCheckbox.propTypes = {
+    autoFocus:PropTypes.bool,
+    checked:PropTypes.bool,
+    defaultChecked:PropTypes.bool,
+    disabled:PropTypes.bool,
+    indeterminate:PropTypes.bool,
+    onChange:PropTypes.func,
+    children:PropTypes.instanceOf(Element)
+};

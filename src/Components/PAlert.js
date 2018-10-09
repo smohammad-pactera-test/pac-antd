@@ -1,5 +1,6 @@
 import React from 'react';
 import {Alert} from 'antd';
+import PropTypes from 'prop-types';
 
 export default class PAlert extends React.Component {
 
@@ -7,7 +8,6 @@ export default class PAlert extends React.Component {
     render() {
 
         const {
-
             afterClose,
             banner,
             closable,
@@ -17,8 +17,8 @@ export default class PAlert extends React.Component {
             message,
             showIcon,
             type,
-            onClose
-
+            onClose,
+            icon
         } = this.props;
 
 
@@ -29,9 +29,10 @@ export default class PAlert extends React.Component {
                 closable={closable}
                 closeText={closeText}
                 description={description}
-                iconType={iconType}
+                // iconType={iconType}
                 message={message}
                 showIcon={showIcon}
+                icon={icon}
                 type={type}
                 onClose={onClose}
             >
@@ -42,3 +43,30 @@ export default class PAlert extends React.Component {
     }
 
 }
+
+PAlert.propTypes = {
+    afterClose:PropTypes.func,
+    banner:PropTypes.bool,
+    closable:PropTypes.bool,
+    closeText:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    description:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    icon:PropTypes.node,
+    message:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    showIcon:PropTypes.bool,
+    type:PropTypes.string,
+    onClose:PropTypes.func,
+    children:PropTypes.node
+};
+
+PAlert.defaultProps = {
+    banner:false
+};

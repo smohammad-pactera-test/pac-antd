@@ -20,12 +20,14 @@ export default class PPopover extends React.Component {
     }
 }
 
-// PPopover.defaultProps={
-//     prefixCls: 'ant-popover',
-//     placement: 'top',
-//     transitionName: 'zoom-big',
-//     trigger: 'hover',
-//     mouseEnterDelay: 0.1,
-//     mouseLeaveDelay: 0.1,
-//     overlayStyle: {}
-// }
+PPopover.propTypes = {
+    content:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    title:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    children:PropTypes.node
+};

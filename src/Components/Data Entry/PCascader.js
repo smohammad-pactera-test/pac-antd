@@ -33,7 +33,6 @@ export default class PCascader extends React.Component {
 
 
         return (
-
             <Cascader allowClear={allowClear}
                 autoFocus={autoFocus}
                 changeOnSelect={changeOnSelect}
@@ -57,8 +56,54 @@ export default class PCascader extends React.Component {
                 value={value}
                 onChange={onChange}
                 onPopupVisibleChange={onPopupVisibleChange}
-
             />
         );
     }
 }
+
+PCascader.propTypes = {
+    allowClear:PropTypes.bool,
+    autoFocus:PropTypes.bool,
+    changeOnSelect:PropTypes.bool,
+    className:PropTypes.string,
+    defaultValue:PropTypes.arrayOf(PropTypes.string),
+    disabled:PropTypes.bool,
+    displayRender:PropTypes.node,
+    expandTrigger:PropTypes.string,
+    fieldNames:PropTypes.object,
+    getPopupContainer:PropTypes.any,
+    loadData:PropTypes.any,
+    notFoundContent:PropTypes.string,
+    options:PropTypes.object,
+    placeholder:PropTypes.string,
+    popupClassName:PropTypes.string,
+    popupPlacement:PropTypes.string,
+    popupVisible:PropTypes.bool,
+    showSearch:PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.object
+    ]),
+    size:PropTypes.string,
+    style:PropTypes.string,
+    suffixIcon:PropTypes.node,
+    value:PropTypes.arrayOf(PropTypes.string),
+    onChange:PropTypes.func,
+    onPopupVisibleChange:PropTypes.func
+};
+
+PCascader.defaultProps = {
+    allowClear:true,
+    autoFocus:false,
+    changeOnSelect:false,
+    defaultValue:[],
+    disabled:false,
+    displayRender:(label) => label.join(' / '),
+    expandTrigger:'click',
+    fieldNames:{ label: 'label', value: 'value', children: 'children' },
+    getPopupContainer:() => document.body,
+    notFoundContent:'Not Found',
+    placeholder:'Please select',
+    popupPlacement:'bottomLeft',
+    showSearch:false,
+    size:'default'
+};

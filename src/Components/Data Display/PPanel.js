@@ -31,3 +31,15 @@ PPanel.defaultProps = {
     forceRender:false,
     showArrow:true
 };
+
+PPanel.propTypes = {
+    disabled:PropTypes.bool,
+    forceRender:PropTypes.bool,
+    header:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    key:PropTypes.string,
+    showArrow:PropTypes.bool
+
+};

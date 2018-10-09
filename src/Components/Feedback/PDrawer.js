@@ -46,3 +46,50 @@ export default class PDrawer extends React.Component {
         );
     }
 }
+
+PDrawer.propTypes = {
+    closable: PropTypes.bool,
+    destroyOnClose: PropTypes.bool,
+    getContainer: PropTypes.instanceOf(Element),
+    mask: PropTypes.bool,
+    maskClosable: PropTypes.bool,
+    maskStyle: PropTypes.object,
+    style: PropTypes.object,
+    title: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    visible: PropTypes.bool,
+    width: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
+    height: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
+    className: PropTypes.string,
+    zIndex: PropTypes.number,
+    placement: PropTypes.oneOf([
+        'top',
+        'right',
+        'bottom',
+        'left'
+    ]),
+    onClose: PropTypes.func,
+    prefixCls:PropTypes.any,
+    children:PropTypes.element
+};
+
+PDrawer.defaultProps = {
+    closable: true,
+    destroyOnClose: false,
+    getContainer: 'body',
+    mask: true,
+    maskClosable: true,
+    maskStyle: {},
+    visible: false,
+    width: 256,
+    zIndex: 1000,
+    placement: 'right'
+};

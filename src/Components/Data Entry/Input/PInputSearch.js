@@ -56,3 +56,41 @@ export default class PInputSearch extends React.Component {
         );
     }
 }
+PInputSearch.propTypes = {
+    addonAfter:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    addonBefore:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    defaultValue:PropTypes.string,
+    disabled:PropTypes.bool,
+    id:PropTypes.string,
+    prefix:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    size:PropTypes.string,
+    suffix:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    type:PropTypes.string,
+    value:PropTypes.string,
+    onChange:PropTypes.func,
+    onPressEnter:PropTypes.func,
+    enterButton:PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.node
+    ]),
+    onSearch:PropTypes.func
+};
+
+PInputSearch.defaultProps = {
+    disabled:false,
+    size:'default',
+    type:'text',
+    enterButton:false
+};

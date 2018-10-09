@@ -18,3 +18,9 @@ export default class PRadioSolidButton extends React.Component {
         );
     }
 }
+
+PRadioSolidButton.propTypes = {
+    buttonStyle:PropTypes.object,
+    value:PropTypes.number,
+    children:PropTypes.element
+};

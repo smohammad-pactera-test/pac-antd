@@ -19,6 +19,13 @@ export default class PTimelineItem extends React.Component {
 
     }
 }
+PTimelineItem.propTypes = {
+    color:PropTypes.string,
+    dot:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ])
+};
 
 PTimelineItem.defaultProps = {
     color:'blue'

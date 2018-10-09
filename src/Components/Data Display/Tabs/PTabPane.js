@@ -14,3 +14,9 @@ export default class PTabPane extends React.Component {
         );
     }
 }
+PTabPane.propTypes = {
+    children:PropTypes.instanceOf(Element)
+};
+PTabPane.defaultProps = {
+    forceRender:false
+};

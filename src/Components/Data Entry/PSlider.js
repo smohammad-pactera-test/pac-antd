@@ -43,3 +43,34 @@ export default class PSlider extends React.Component {
         );
     }
 }
+
+PSlider.propTypes = {
+    autoFocus:PropTypes.bool,
+    defaultValue:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.arrayOf(PropTypes.number)
+    ]),
+    disabled:PropTypes.bool,
+    dots:PropTypes.bool,
+    included:PropTypes.bool,
+    marks:PropTypes.object,
+    max:PropTypes.number,
+    min:PropTypes.number,
+    range:PropTypes.bool,
+    step:PropTypes.oneOfType([
+        PropTypes.number,
+        null
+    ]),
+    tipFormatter:PropTypes.oneOfType([
+        PropTypes.func,
+        null
+    ]),
+    value:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.arrayOf(PropTypes.number)
+    ]),
+    vertical:PropTypes.bool,
+    onAfterChange:PropTypes.func,
+    onChange:PropTypes.func
+};
+

@@ -36,3 +36,43 @@ export default class PCol extends React.Component {
         );
     }
 }
+PCol.propTypes = {
+    offset:PropTypes.number,
+    order:PropTypes.number,
+    pull:PropTypes.number,
+    push:PropTypes.number,
+    span:PropTypes.number,
+    xs:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.object
+    ]),
+    sm:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.object
+    ]),
+    md:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.object
+    ]),
+    lg:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.object
+    ]),
+    xl:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.object
+    ]),
+    xxl:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.object
+    ]),
+    children:PropTypes.element
+
+};
+
+PCol.defaultProps = {
+    offset:0,
+    order:0,
+    pull:0,
+    push:0
+};

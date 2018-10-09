@@ -25,6 +25,24 @@ export default class PTimeline extends React.Component {
     }
 }
 
+PTimeline.propTypes = {
+    pending:PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    pendingDot:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    reverse:PropTypes.bool,
+    mode:PropTypes.oneOfType([
+        'left',
+        'alternate',
+        'right'
+    ])
+};
+
 PTimeline.defaultProps = {
     pending:false,
     pendingDot:<Icon type="loading" />,

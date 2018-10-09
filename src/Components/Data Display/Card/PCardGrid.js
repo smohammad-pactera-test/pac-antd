@@ -16,3 +16,9 @@ export default class PCardGrid extends  React.Component {
         );
     }
 }
+
+PCardGrid.propTypes = {
+    className:PropTypes.string,
+    style:PropTypes.object,
+    children:PropTypes.element.isRequired
+};

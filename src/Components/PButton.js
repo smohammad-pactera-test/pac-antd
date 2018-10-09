@@ -8,7 +8,7 @@ export default class PButton extends React.Component {
         const {
             disabled,
             ghost,
-            href,
+            // href,
             htmlType,
             icon,
             loading,
@@ -42,11 +42,14 @@ PButton.defaultProps = {
     loading: false,
     ghost: false,
     block: false,
-    onClick: () => {}
-
+    onClick: () => {},
+    disabled:false,
+    htmlType:'button',
+    size:'default',
+    type:'default'
 };
 
-PButton.propTypes = {
+export const PButtonProps = PButton.propTypes = {
     type: PropTypes.string,
     shape: PropTypes.oneOf(['circle', 'circle-outline']),
     size: PropTypes.oneOf(['large', 'default', 'small']),
@@ -56,4 +59,8 @@ PButton.propTypes = {
     className: PropTypes.string,
     icon: PropTypes.string,
     block: PropTypes.bool,
+    disabled:PropTypes.bool,
+    ghost:PropTypes.bool,
+    target:PropTypes.string,
+    children:PropTypes.node
 };

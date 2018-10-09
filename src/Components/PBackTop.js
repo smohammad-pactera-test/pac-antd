@@ -8,11 +8,9 @@ export default class PBackTop extends React.Component {
     render() {
 
         const {
-
             visibilityHeight,
             onClick,
             target
-
         } = this.props;
 
         return (
@@ -22,14 +20,14 @@ export default class PBackTop extends React.Component {
         );
     }
 }
+PBackTop.PropTypes = {
+    target:PropTypes.func,
+    visibilityHeight:PropTypes.number,
+    onClick:PropTypes.func
+};
 
 PBackTop.defaultProps = {
     visibilityHeight:400,
     target:() => window
 };
 
-PBackTop.PropTypes = {
-    target:PropTypes.func,
-    visibilityHeight:PropTypes.number,
-    onClick:PropTypes.func
-};

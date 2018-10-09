@@ -33,3 +33,32 @@ export default  class PSwitch extends React.Component {
         );
     }
 }
+PSwitch.propTypes = {
+    autoFocus:PropTypes.bool,
+    checked:PropTypes.bool,
+    checkedChildren:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    defaultChecked:PropTypes.bool,
+    disabled:PropTypes.bool,
+    loading:PropTypes.bool,
+    size:PropTypes.string,
+    unCheckedChildren:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    onChange:PropTypes.func,
+    className:PropTypes.string,
+    onBlur:PropTypes.func,
+    onFocus:PropTypes.func
+};
+
+PSwitch.defaultProps = {
+    autoFocus:false,
+    checked:false,
+    defaultChecked:false,
+    disabled:false,
+    loading:false,
+    size:'default'
+};

@@ -21,3 +21,19 @@ export default class PRow extends React.Component {
         );
     }
 }
+PRow.propTypes = {
+    align:PropTypes.string,
+    gutter:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object
+    ]),
+    justify:PropTypes.string,
+    type:PropTypes.string,
+    children:PropTypes.element
+};
+
+PRow.defaultProps = {
+    align:'top',
+    gutter:0,
+    justify:'start'
+};

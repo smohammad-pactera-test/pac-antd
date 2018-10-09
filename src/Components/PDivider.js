@@ -28,3 +28,18 @@ export default class PDivider extends React.Component {
         );
     }
 }
+
+PDivider.propTypes = {
+    className:PropTypes.string,
+    dashed:PropTypes.bool,
+    orientation:PropTypes.oneOf(['left','right','center']),
+    style:PropTypes.object,
+    type:PropTypes.oneOf(['horizontal','vertical']),
+    children:PropTypes.node
+};
+
+PDivider.defaultProps = {
+    dashed:false,
+    orientation:'center',
+    type:'horizontal'
+};
