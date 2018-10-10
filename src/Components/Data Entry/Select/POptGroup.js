@@ -24,5 +24,6 @@ POptGroup.propTypes = {
     label:PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.element
-    ])
+    ]),
+    children:PropTypes.element
 };

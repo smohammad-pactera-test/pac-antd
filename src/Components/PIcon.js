@@ -26,7 +26,7 @@ export default class PIcon extends React.Component {
 
 PIcon.defaultProps = {
     type: 'omitted',
-    spin:'false'
+    spin:false
 };
 
 PIcon.propTypes = {

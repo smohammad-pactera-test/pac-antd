@@ -20,7 +20,7 @@ export default class PBackTop extends React.Component {
         );
     }
 }
-PBackTop.PropTypes = {
+PBackTop.propTypes = {
     target:PropTypes.func,
     visibilityHeight:PropTypes.number,
     onClick:PropTypes.func

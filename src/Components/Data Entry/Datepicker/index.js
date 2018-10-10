@@ -48,8 +48,8 @@ export default class PDatePicker extends React.Component {
                 getCalendarContainer={getCalendarContainer}
                 locale={locale}
                 mode={mode}
-                // open={open}
-                // placeholder={placeholder}
+                open={open}
+                placeholder={placeholder}
                 popupStyle={popupStyle}
                 size={size}
                 style={style}
@@ -61,7 +61,7 @@ export default class PDatePicker extends React.Component {
                 renderExtraFooter={renderExtraFooter}
                 showTime={showTime}
                 showToday={showToday}
-                // value={value}
+                value={value}
                 onCalendarChange={onCalendarChange}
                 onChange={onChange}
                 onOk={onOk}

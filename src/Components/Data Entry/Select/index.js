@@ -85,8 +85,8 @@ export default class PSelect extends React.Component {
                 onPopupScroll={onPopupScroll}
                 onSearch={onSearch}
                 onSelect={onSelect}
-                defaultOpen={defaultOpen}
-                open={open}
+                // defaultOpen={defaultOpen}
+                // open={open}
                 prefixCls={'ant-select'}
                 onDropdownVisibleChange={onDropdownVisibleChange}>
                 {this.props.children}
@@ -159,7 +159,9 @@ PSelect.propTypes = {
     onSelect: PropTypes.func,
     onDropdownVisibleChange: PropTypes.func,
     defaultOpen: PropTypes.bool,
-    open: PropTypes.open
+    open: PropTypes.open,
+    style:PropTypes.object,
+    children:PropTypes.element
 
 
 };

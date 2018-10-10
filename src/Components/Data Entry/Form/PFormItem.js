@@ -34,3 +34,29 @@ export default class PFormItem extends React.Component {
         );
     }
 }
+PFormItem.propTypes = {
+    colon:PropTypes.bool,
+    extra:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    hasFeedback:PropTypes.bool,
+    help:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    label:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    labelCol:PropTypes.object,
+    required:PropTypes.bool,
+    validateStatus:PropTypes.string,
+    wrapperCol:PropTypes.object
+};
+
+PFormItem.defaultProps = {
+    colon:true,
+    hasFeedback:false,
+    required:false
+};

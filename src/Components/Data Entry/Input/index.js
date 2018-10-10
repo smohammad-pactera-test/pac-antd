@@ -75,7 +75,15 @@ PInput.propTypes = {
     type:PropTypes.string,
     value:PropTypes.string,
     onChange:PropTypes.func,
-    onPressEnter:PropTypes.func
+    onPressEnter:PropTypes.func,
+    maxLength:PropTypes.number,
+    className:PropTypes.string,
+    prefixCls:PropTypes.any,
+    onKeyDown:PropTypes.func,
+    onKeyUp:PropTypes.func,
+    onFocus:PropTypes.func,
+    onBlur:PropTypes.func,
+    placeholder:PropTypes.string
 };
 PInput.defaultProps = {
     disabled:false,

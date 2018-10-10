@@ -44,8 +44,8 @@ export default class PMonthPicker extends React.Component {
                 getCalendarContainer={getCalendarContainer}
                 locale={locale}
                 mode={mode}
-                // open={open}
-                // placeholder={placeholder}
+                open={open}
+                placeholder={placeholder}
                 popupStyle={popupStyle}
                 size={size}
                 style={style}
@@ -55,7 +55,7 @@ export default class PMonthPicker extends React.Component {
                 format={format}
                 monthCellContentRender={monthCellContentRender}
                 renderExtraFooter={renderExtraFooter}
-                // value={value}
+                value={value}
                 onChange={onChange}
             />
         );

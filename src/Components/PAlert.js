@@ -13,7 +13,7 @@ export default class PAlert extends React.Component {
             closable,
             closeText,
             description,
-            iconType,
+            // iconType,
             message,
             showIcon,
             type,

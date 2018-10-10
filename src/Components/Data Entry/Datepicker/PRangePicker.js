@@ -54,7 +54,7 @@ export default class PRangePicker extends React.Component {
                 ranges={ranges}
                 renderExtraFooter={renderExtraFooter}
                 showTime={showTime}
-                // value={value}
+                value={value}
                 onChange={onChange}
                 onOk={onOk}
 

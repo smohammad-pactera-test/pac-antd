@@ -76,6 +76,16 @@ PList.propTypes = {
     ]),
     split: PropTypes.bool,
     className:PropTypes.string,
+    dataSource:PropTypes.object,
+    extra:PropTypes.any,
+    id:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string
+    ]),
+    prefixCls:PropTypes.string,
+    rowKey:PropTypes.number,
+    renderItem:PropTypes.bool,
+    size:PropTypes.string
 
 };
 

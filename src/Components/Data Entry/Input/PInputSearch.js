@@ -85,7 +85,15 @@ PInputSearch.propTypes = {
         PropTypes.bool,
         PropTypes.node
     ]),
-    onSearch:PropTypes.func
+    onSearch:PropTypes.func,
+    maxLength:PropTypes.number,
+    className:PropTypes.string,
+    prefixCls:PropTypes.any,
+    onKeyDown:PropTypes.func,
+    onKeyUp:PropTypes.func,
+    onFocus:PropTypes.func,
+    onBlur:PropTypes.func,
+    placeholder:PropTypes.string
 };
 
 PInputSearch.defaultProps = {

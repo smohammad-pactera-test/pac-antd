@@ -83,5 +83,21 @@ PInputTextArea.propTypes = {
         PropTypes.bool,
         PropTypes.object
     ]),
+    autocapitalize:PropTypes.bool,
+    autocomplete:PropTypes.bool,
+    autofocus:PropTypes.bool,
+    cols:PropTypes.any,
+    form:PropTypes.any,
+    maxlength:PropTypes.number,
+    minlength:PropTypes.number,
+    name:PropTypes.number,
+    placeholder:PropTypes.string,
+    readonly:PropTypes.bool,
+    required:PropTypes.bool,
+    rows:PropTypes.any,
+    spellcheck:PropTypes.bool,
+    wrap:PropTypes.any,
+    children:PropTypes.element
+
 
 };
