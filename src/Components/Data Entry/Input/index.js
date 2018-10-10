@@ -28,26 +28,65 @@ export default class PInput extends React.Component {
         } = this.props;
         return (
             <Input type={type}
-                   id={id}
-                   size={size}
-                   maxLength={maxLength}
-                   disabled={disabled}
-                   value={value}
-                   defaultValue={defaultValue}
-                   className={className}
-                   addonBefore={addonBefore}
-                   addonAfter={addonAfter}
-                   prefixCls={prefixCls}
-                   onPressEnter={onPressEnter}
-                   onKeyDown={onKeyDown}
-                   onKeyUp={onKeyUp}
-                   onFocus={onFocus}
-                   onBlur={onBlur}
-                   prefix={prefix}
-                   suffix={suffix}
-                   onChange={onChange}
-                   placeholder={placeholder}
+                id={id}
+                size={size}
+                maxLength={maxLength}
+                disabled={disabled}
+                value={value}
+                defaultValue={defaultValue}
+                className={className}
+                addonBefore={addonBefore}
+                addonAfter={addonAfter}
+                prefixCls={prefixCls}
+                onPressEnter={onPressEnter}
+                onKeyDown={onKeyDown}
+                onKeyUp={onKeyUp}
+                onFocus={onFocus}
+                onBlur={onBlur}
+                prefix={prefix}
+                suffix={suffix}
+                onChange={onChange}
+                placeholder={placeholder}
             />
         );
     }
 }
+PInput.propTypes = {
+    addonAfter:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    addonBefore:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    defaultValue:PropTypes.string,
+    disabled:PropTypes.bool,
+    id:PropTypes.string,
+    prefix:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    size:PropTypes.string,
+    suffix:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    type:PropTypes.string,
+    value:PropTypes.string,
+    onChange:PropTypes.func,
+    onPressEnter:PropTypes.func,
+    maxLength:PropTypes.number,
+    className:PropTypes.string,
+    prefixCls:PropTypes.any,
+    onKeyDown:PropTypes.func,
+    onKeyUp:PropTypes.func,
+    onFocus:PropTypes.func,
+    onBlur:PropTypes.func,
+    placeholder:PropTypes.string
+};
+PInput.defaultProps = {
+    disabled:false,
+    size:'default',
+    type:'text'
+};

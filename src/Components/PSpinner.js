@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import {Spin} from 'antd';
 
 
-export default class PSpinner extends React.Component{
+export default class PSpinner extends React.Component {
 
 
-    render(){
+    render() {
 
         const {
             prefixCls,
@@ -14,27 +14,41 @@ export default class PSpinner extends React.Component{
             spinning,
             size,
             wrapperClassName,
-            indicator
+            indicator,
+            delay,
+            tip
         } = this.props;
 
-        return(
+        return (
             <Spin prefixCls={prefixCls}
-                  className={className}
-                  spinning={spinning}
-                  size={size}
-                  wrapperClassName={wrapperClassName}
-                  indicator={indicator}>
+                delay={delay}
+                className={className}
+                spinning={spinning}
+                size={size}
+                tip={tip}
+                wrapperClassName={wrapperClassName}
+                indicator={indicator}>
                 {this.props.children}
             </Spin>
 
-        )
+        );
 
     }
 
 
 }
 
-PSpinner.defaultProps={
-    spinning:true
-
-}
+PSpinner.propTypes = {
+    delay:PropTypes.string,
+    indicator:PropTypes.element,
+    size:PropTypes.string,
+    spinning:PropTypes.bool,
+    tip:PropTypes.string,
+    wrapperClassName:PropTypes.string,
+    children:PropTypes.node,
+    prefixCls:PropTypes.string,
+    className:PropTypes.string
+};
+PSpinner.defaultProps = {
+    spinning: true
+};

@@ -1,0 +1,174 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "rules": {
+    // disallow use of console (disabled)
+    "no-console": 0,
+
+    // space indentation
+    "indent": [
+      1,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+
+    "react/jsx-indent": [
+      1
+    ],
+
+    // linebreak style
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+
+    // quote style
+    "quotes": [
+      "error",
+      "single"
+    ],
+
+    // semi-colon at end of line
+    "semi": [
+      2,
+      "always"
+    ],
+
+    // getter/setter pairs in objects
+    "accessor-pairs": [
+      1,
+      {
+        "getWithoutSet": true,
+        "setWithoutGet": true
+      }
+    ],
+
+    // maximum cyclomatic complexity allowed in a program
+    "complexity": [
+      1,
+      12
+    ],
+
+    // require use of === and !== over == and !=
+    "eqeqeq": [
+      1,
+      "smart"
+    ],
+
+    // enforce consistent braces
+    "brace-style": [
+      1,
+      "1tbs", // 1tbs - closing if bracket on same line as else
+      {
+        "allowSingleLine": true
+      }
+    ],
+
+    // enforce camelCase (ignores CONSTANTS)
+    "camelcase": 2,
+
+    // enforce comma at end of line for lists (vs at the start of the next line)
+    "comma-style": 1,
+
+    // enforce require at top-level module scope
+    "global-require": 2,
+
+    // do not allow an if to be the only statement inside an else
+    "no-lonely-if": 2,
+
+    // maximum number of continuous blank lines
+    "no-multiple-empty-lines": [
+      1,
+      {
+        "max": 2,
+        "maxEOF": 1, // do not allow more than 1 empty line at end of file
+        "maxBOF": 0  // do not allow any blank lines at start of file
+      }
+    ],
+
+    // do not allow nested ternary issues
+    "no-nested-ternary": 2,
+
+    // allow space between function name and parentheses
+    "no-spaced-func": 0,
+
+    // disallow whitespace before property (e.g. `foo .bar`)
+    "no-whitespace-before-property": 1,
+
+    // object properties all must be on newlines
+    "object-property-newline": [
+      1,
+      {
+        "allowMultiplePropertiesPerLine": true // allow when all properties in an object literal are on the same line
+      }
+    ],
+
+    // enforce space before blocks
+    "space-before-blocks": [
+      1,
+      "always"
+    ],
+
+    // enforce space between function and parentheses
+    "space-before-function-paren": [
+      1,
+      "never"
+    ],
+
+    // force space around operations (e.g. +, -, =, etc)
+    "space-infix-ops": 1,
+
+    // enforce space between unary operators
+    "space-unary-ops": [
+      1,
+      {
+        "words": true,
+        "nonwords": false
+      }
+    ],
+
+    // enforce parentheses on arrow functions
+    "arrow-parens": 2,
+
+    // require space before/after arrow function’s arrow
+    "arrow-spacing": 1,
+
+    // disallow arrow functions where they could be confused with comparisons (e.g. let x = a => 1 ? 2 : 3;
+    "no-confusing-arrow": 2,
+
+    // disallow duplicate imports
+    "no-duplicate-imports": 2,
+
+    // disallow `var` in favor of `const` and `var
+    "no-var": 2,
+
+    // force using arrow functions in callbacks
+    "prefer-arrow-callback": 2,
+
+    // enforce consistent spacing before and after keywords
+    "keyword-spacing": 1,
+
+    // have a space betwen comments
+    "spaced-comment": [1, "always"]
+  }
+}

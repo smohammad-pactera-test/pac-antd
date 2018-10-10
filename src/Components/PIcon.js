@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { Icon } from 'antd';
 
 
@@ -12,23 +12,28 @@ export default class PIcon extends React.Component {
             spin,
             component,
             twoToneColor
-        } = this.props
+        } = this.props;
 
         return <Icon type={type}
-                     style={style}
-                     theme={theme}
-                     spin={spin}
-                     component={component}
-                     twoToneColor={twoToneColor}
-        />
+            style={style}
+            theme={theme}
+            spin={spin}
+            component={component}
+            twoToneColor={twoToneColor}
+        />;
     }
 }
 
 PIcon.defaultProps = {
     type: 'omitted',
-
-}
+    spin:false
+};
 
 PIcon.propTypes = {
-    icon: PropTypes.string.isRequired
-}
+    type:PropTypes.string,
+    style:PropTypes.object,
+    theme:PropTypes.oneOf(['filled', 'circle-filled','twoTone']),
+    spin:PropTypes.bool,
+    component:PropTypes.node,
+    twoToneColor:PropTypes.string
+};

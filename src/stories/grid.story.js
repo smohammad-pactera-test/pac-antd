@@ -105,7 +105,7 @@ stories.add('Flex Layout', withInfo({})(() => (
 
 stories.add('Responsive Grid', withInfo({})(() => (
    <div>
-       <h1>Responsive Grid</h1>
+       <h1 className='heading-secondary'>Responsive Grid</h1>
     <PRow>
         <PCol xs={2} sm={4} md={6} lg={8} xl={10}>Col</PCol>
         <PCol xs={20} sm={16} md={12} lg={8} xl={4}>Col</PCol>
@@ -113,7 +113,7 @@ stories.add('Responsive Grid', withInfo({})(() => (
     </PRow>
        <br/>
        <br/>
-       <h1>Responsive Grid with Offset</h1>
+       <h1 className='heading-secondary'>Responsive Grid with Offset</h1>
        <PRow>
            <PCol xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>Col</PCol>
            <PCol xs={{ span: 11, offset: 1 }} lg={{ span: 6, offset: 2 }}>Col</PCol>

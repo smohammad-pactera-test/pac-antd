@@ -1,0 +1,7 @@
+src
+.idea/
+.idea/**
+public
+build
+storybook-static
+

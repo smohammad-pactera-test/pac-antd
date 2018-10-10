@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Radio} from 'antd';
-export default class PRadio extends React.Component{
-    render(){
+export default class PRadio extends React.Component {
+    render() {
 
         const {
             autoFocus,
@@ -14,20 +14,20 @@ export default class PRadio extends React.Component{
             onChange,
             style,
             onFocus
-        }=this.props;
+        } = this.props;
 
 
-        return(
+        return (
 
             <Radio autoFocus={autoFocus}
-                   checked={checked}
-                   defaultChecked={defaultChecked}
-                   disabled={disabled}
-                   value={value}
-                   onBlur={onBlur}
-                   onChange={onChange}
-                   style={style}
-                   onFocus={onFocus}
+                checked={checked}
+                defaultChecked={defaultChecked}
+                disabled={disabled}
+                value={value}
+                onBlur={onBlur}
+                onChange={onChange}
+                style={style}
+                onFocus={onFocus}
             >
                 {this.props.children}
             </Radio>
@@ -35,3 +35,21 @@ export default class PRadio extends React.Component{
         );
     }
 }
+PRadio.propTypes = {
+    autoFocus:PropTypes.bool,
+    checked:PropTypes.bool,
+    defaultChecked:PropTypes.bool,
+    disabled:PropTypes.bool,
+    value:PropTypes.any,
+    onBlur:PropTypes.func,
+    onChange:PropTypes.func,
+    style:PropTypes.object,
+    onFocus:PropTypes.object,
+    children:PropTypes.instanceOf(Element)
+};
+
+PRadio.defaultProps = {
+    autoFocus:false,
+    defaultChecked:false,
+    disabled:false
+};

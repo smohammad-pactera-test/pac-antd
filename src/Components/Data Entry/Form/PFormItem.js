@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Form } from 'antd'
+import { Form } from 'antd';
 
-export default class PFormItem extends React.Component{
+export default class PFormItem extends React.Component {
 
     render() {
 
@@ -17,20 +17,47 @@ export default class PFormItem extends React.Component{
             validateStatus,
             wrapperCol
 
-        }= this.props;
+        } = this.props;
 
-        return(
+        return (
             <Form.Item colon={colon}
-                       extra={extra}
-                       hasFeedback={hasFeedback}
-                       help={help}
-                       label={label}
-                       labelCol={labelCol}
-                       required={required}
-                       validateStatus={validateStatus}
-                       wrapperCol={wrapperCol}>
+                extra={extra}
+                hasFeedback={hasFeedback}
+                help={help}
+                label={label}
+                labelCol={labelCol}
+                required={required}
+                validateStatus={validateStatus}
+                wrapperCol={wrapperCol}>
                 {this.props.children}
             </Form.Item>
         );
     }
 }
+PFormItem.propTypes = {
+    colon:PropTypes.bool,
+    extra:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    hasFeedback:PropTypes.bool,
+    help:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    label:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    labelCol:PropTypes.object,
+    required:PropTypes.bool,
+    validateStatus:PropTypes.string,
+    wrapperCol:PropTypes.object,
+    children:PropTypes.element
+};
+
+PFormItem.defaultProps = {
+    colon:true,
+    hasFeedback:false,
+    required:false
+};

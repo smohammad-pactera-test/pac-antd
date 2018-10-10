@@ -1,8 +1,8 @@
 import React from 'react';
 import { Tag } from 'antd';
-
-export default class PTag extends React.Component{
-    render(){
+import PropTypes from 'prop-types';
+export default class PTag extends React.Component {
+    render() {
 
 
         const {
@@ -13,18 +13,27 @@ export default class PTag extends React.Component{
             visible
         } = this.props;
 
-        return(
+        return (
             <Tag afterClose={afterClose}
-                 closable={closable}
-                 color={color}
-                 onClose={onClose}
-                 visible={visible}>
+                closable={closable}
+                color={color}
+                onClose={onClose}
+                visible={visible}>
                 {this.props.children}
             </Tag>
         );
     }
 }
 
-PTag.defaultProps={
-    visible:true
-}
+PTag.defaultProps = {
+    visible:true,
+    closable:false
+};
+PTag.propTypes = {
+    afterClose:PropTypes.func,
+    closable:PropTypes.bool,
+    color:PropTypes.string,
+    onClose:PropTypes.func,
+    visible:PropTypes.bool,
+    children:PropTypes.element
+};

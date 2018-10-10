@@ -7,6 +7,11 @@ module.exports = (storybookBaseConfig, configType) => {
     )
     storybookBaseConfig.module.rules.push(
         {
+      test: /\.jsx?$/,
+      loader: "eslint-loader?{fix: true}",
+      include: path.resolve('../src/Components')
+    },
+        {
             test: /\.scss$/,
             exclude: /node_modules/,
             use: [

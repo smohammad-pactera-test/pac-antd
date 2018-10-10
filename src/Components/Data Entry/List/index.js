@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {List} from 'antd'
+import {List} from 'antd';
 
 
 export default class PList extends React.Component {
@@ -30,24 +30,70 @@ export default class PList extends React.Component {
 
         return (
             <List bordered={bordered}
-                  className={className}
-                  dataSource={dataSource}
-                  extra={extra}
-                  grid={grid}
-                  id={id}
-                  itemLayout={itemLayout}
-                  //loading={loading}
-                  loadMore={loadMore}
-                  pagination={pagination}
-                  prefixCls={prefixCls}
-                  rowKey={rowKey}
-                  renderItem={renderItem}
-                  size={size}
-                  split={true}
-                  header={header}
-                  footer={footer}
-                  locale={locale}
+                className={className}
+                dataSource={dataSource}
+                extra={extra}
+                grid={grid}
+                id={id}
+                itemLayout={itemLayout}
+                loading={loading}
+                loadMore={loadMore}
+                pagination={pagination}
+                prefixCls={prefixCls}
+                rowKey={rowKey}
+                renderItem={renderItem}
+                size={size}
+                split={split}
+                header={header}
+                footer={footer}
+                locale={locale}
             />
-        )
+        );
     }
 }
+
+PList.propTypes = {
+    bordered: PropTypes.bool,
+    footer: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    grid: PropTypes.object,
+    header: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    itemLayout: PropTypes.string,
+    loading: false,
+    loadMore: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node
+    ]),
+    locale: PropTypes.object,
+    pagination: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.object
+    ]),
+    split: PropTypes.bool,
+    className:PropTypes.string,
+    dataSource:PropTypes.object,
+    extra:PropTypes.any,
+    id:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string
+    ]),
+    prefixCls:PropTypes.string,
+    rowKey:PropTypes.number,
+    renderItem:PropTypes.bool,
+    size:PropTypes.string
+
+};
+
+PList.defaultProps = {
+    bordered: false,
+    loading: false,
+    locale: {emptyText: 'No Data'},
+    pagination:false,
+    split:true
+};
+

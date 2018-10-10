@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Badge} from 'antd'
+import {Badge} from 'antd';
 
-export default class PBadge extends React.Component{
+export default class PBadge extends React.Component {
 
-    render(){
+    render() {
         const {
             count,
             showZero,
@@ -14,19 +14,47 @@ export default class PBadge extends React.Component{
             status,
             text,
             title
-        }=this.props;
-        return(
-        <Badge count={count}
-               showZero={showZero}
-               dot={dot}
-               overflowCount={overflowCount}
-               offset={offset}
-               status={status}
-               text={text}
-               title={title}
-        >
-            {this.props.children}
-        </Badge>
+        } = this.props;
+        return (
+            <Badge count={count}
+                showZero={showZero}
+                dot={dot}
+                overflowCount={overflowCount}
+                offset={offset}
+                status={status}
+                text={text}
+                title={title}
+            >
+                {this.props.children}
+            </Badge>
         );
     }
 }
+
+PBadge.propTypes = {
+    count:PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.node
+    ]),
+    dot:PropTypes.bool,
+    offset:PropTypes.arrayOf(PropTypes.number),
+    overflowCount:PropTypes.number,
+    showZero:PropTypes.bool,
+    status:PropTypes.oneOf([
+        'success',
+        'processing',
+        'default',
+        'error',
+        'warning'
+    ]),
+    text:PropTypes.string,
+    title:PropTypes.string,
+    children:PropTypes.element
+};
+
+PBadge.defaultProps = {
+    dot:false,
+    overflowCount:99,
+    showZero:false,
+    title:'count'
+};

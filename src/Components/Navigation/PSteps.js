@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import {Steps} from 'antd';
 
 
-export default class PSteps extends React.Component{
+export default class PSteps extends React.Component {
 
-    render(){
+    render() {
         const {
             current,
             direction,
@@ -14,30 +14,43 @@ export default class PSteps extends React.Component{
             size,
             status,
             initial
-        }= this.props;
+        } = this.props;
 
-        return(
-        <Steps current={current}
-               direction={direction}
-               labelPlacement={labelPlacement}
-               progressDot={progressDot}
-               size={size}
-               status={status}
-               initial={initial}>
-            {this.props.children}
-        </Steps>
+        return (
+            <Steps current={current}
+                direction={direction}
+                labelPlacement={labelPlacement}
+                progressDot={progressDot}
+                size={size}
+                status={status}
+                initial={initial}>
+                {this.props.children}
+            </Steps>
         );
     }
 }
 
-PSteps.defaultProps={
+PSteps.defaultProps = {
     prefixCls: 'ant-steps',
     iconPrefix: 'ant',
-    current: 0
-}
+    current: 0,
+    direction:'horizontal',
+    labelPlacement:'horizontal',
+    progressDot:false,
+    size:'default',
+    status:'process',
+    initial:0
+};
 
-PSteps.propTypes={
+PSteps.propTypes = {
     prefixCls: PropTypes.string,
     iconPrefix: PropTypes.string,
-    current: PropTypes.number
-}
+    current: PropTypes.number,
+    direction:PropTypes.string,
+    labelPlacement:PropTypes.string,
+    progressDot:PropTypes.bool,
+    size:PropTypes.string,
+    status:PropTypes.string,
+    initial:PropTypes.number,
+    children:PropTypes.element
+};

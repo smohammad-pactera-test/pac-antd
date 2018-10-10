@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 
 export default class PProgressbar extends React.Component {
 
-
-    render(){
+    render() {
 
         const {
             status,
@@ -19,31 +18,47 @@ export default class PProgressbar extends React.Component {
             trailColor,
             format,
             gapDegree,
-        }= this.props
+        } = this.props;
 
-        return(
+        return (
             <Progress status={status}
-                      type={type}
-                      showInfo={showInfo}
-                      percent={percent}
-                      width={width}
-                      strokeWidth={strokeWidth}
-                      strokeLinecap={strokeLinecap}
-                      strokeColor={strokeColor}
-                      trailColor={trailColor}
-                      format={format}
-                      gapDegree={gapDegree}
+                type={type}
+                showInfo={showInfo}
+                percent={percent}
+                width={width}
+                strokeWidth={strokeWidth}
+                strokeLinecap={strokeLinecap}
+                strokeColor={strokeColor}
+                trailColor={trailColor}
+                format={format}
+                gapDegree={gapDegree}
 
             />
         );
 
 
-
     }
 }
 
-PProgressbar.defaultProps ={
-    format:()=>{},
+PProgressbar.propTypes = {
+    format:PropTypes.func,
+    gapDegree:PropTypes.number,
+    gapPosition:PropTypes.string,
+    percent:PropTypes.number,
+    showInfo:PropTypes.bool,
+    status:PropTypes.string,
+    strokeWidth:PropTypes.number,
+    strokeLinecap:PropTypes.number,
+    strokeColor:PropTypes.string,
+    successPercent:PropTypes.number,
+    type:PropTypes.string,
+    width:PropTypes.number,
+    trailColor:PropTypes.string
+};
+
+
+PProgressbar.defaultProps = {
+    format:() => {},
     gapDegree:0,
     gapPosition:'top',
     percent:0,
@@ -51,5 +66,6 @@ PProgressbar.defaultProps ={
     strokeWidth:10,
     strokeLinecap:'round',
     successPercent:0,
-    type:'line'
-}
+    type:'line',
+    trailColor: '#f3f3f3'
+};
