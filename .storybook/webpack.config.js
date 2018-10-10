@@ -30,6 +30,10 @@ module.exports = (storybookBaseConfig, configType) => {
             ]
         },
         {
+            test: /\.(gif|svg|jpg|png)$/,
+            loader: "file-loader",
+        },
+        {
             test: /\.less$/,
             use: [
                 {
