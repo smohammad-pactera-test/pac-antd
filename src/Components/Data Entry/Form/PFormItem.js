@@ -52,7 +52,8 @@ PFormItem.propTypes = {
     labelCol:PropTypes.object,
     required:PropTypes.bool,
     validateStatus:PropTypes.string,
-    wrapperCol:PropTypes.object
+    wrapperCol:PropTypes.object,
+    children:PropTypes.element
 };
 
 PFormItem.defaultProps = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {DatePicker} from 'antd';
-
+import {commonDatepickerProps} from './index';
 
 export default class PRangePicker extends React.Component {
 
@@ -62,3 +62,23 @@ export default class PRangePicker extends React.Component {
         );
     }
 }
+
+PRangePicker.propTypes = {
+    ...commonDatepickerProps,
+    defaultValue:PropTypes.any,
+    disabledTime:PropTypes.func,
+    format:PropTypes.string,
+    ranges:PropTypes.any,
+    renderExtraFooter:PropTypes.node,
+    showTime:PropTypes.oneOfType([
+        PropTypes.object,
+        PropTypes.bool
+    ]),
+    value:PropTypes.instanceOf(Date),
+    onChange:PropTypes.func,
+    onOk:PropTypes.func
+};
+
+PRangePicker.defaultProps = {
+    format:'YYYY-MM-DD HH:mm:ss'
+};

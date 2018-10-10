@@ -40,7 +40,8 @@ PTimeline.propTypes = {
         'left',
         'alternate',
         'right'
-    ])
+    ]),
+    children:PropTypes.element
 };
 
 PTimeline.defaultProps = {

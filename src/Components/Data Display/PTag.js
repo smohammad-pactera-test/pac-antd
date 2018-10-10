@@ -34,5 +34,6 @@ PTag.propTypes = {
     closable:PropTypes.bool,
     color:PropTypes.string,
     onClose:PropTypes.func,
-    visible:PropTypes.bool
+    visible:PropTypes.bool,
+    children:PropTypes.element
 };

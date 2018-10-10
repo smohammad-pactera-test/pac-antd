@@ -41,7 +41,8 @@ PAvatar.propTypes = {
     ]),
     src:PropTypes.string,
     alt:PropTypes.string,
-    onError:PropTypes.bool
+    onError:PropTypes.bool,
+    children:PropTypes.element
 };
 
 PAvatar.defaultProps = {

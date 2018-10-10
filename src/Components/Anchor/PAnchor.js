@@ -31,14 +31,15 @@ export default class PAnchor extends React.Component {
         );
     }
 }
-PAnchor.PropTypes = {
+PAnchor.propTypes = {
     affix:PropTypes.bool,
     bounds:PropTypes.number,
     getContainer:PropTypes.func,
     offsetTop:PropTypes.number,
     showInkInFixed:PropTypes.bool,
     offsetBottom:PropTypes.bool,
-    onClick:PropTypes.func
+    onClick:PropTypes.func,
+    children:PropTypes.element
 };
 
 PAnchor.defaultProps = {

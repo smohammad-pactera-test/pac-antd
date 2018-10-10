@@ -19,7 +19,8 @@ export default class PLink extends React.Component {
     }
 }
 
-PLink.PropTypes = {
+PLink.propTypes = {
     href:PropTypes.func,
-    title:PropTypes.string
+    title:PropTypes.string,
+    children:PropTypes.element
 };

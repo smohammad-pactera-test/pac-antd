@@ -42,7 +42,9 @@ PCarousel.propTypes = {
     effect:PropTypes.oneOf([
         'scrollx',
         'fade'
-    ])
+    ]),
+    vertical:PropTypes.bool,
+    children:PropTypes.element
 };
 
 PCarousel.defaultProps = {

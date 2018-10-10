@@ -48,7 +48,8 @@ PBadge.propTypes = {
         'warning'
     ]),
     text:PropTypes.string,
-    title:PropTypes.string
+    title:PropTypes.string,
+    children:PropTypes.element
 };
 
 PBadge.defaultProps = {

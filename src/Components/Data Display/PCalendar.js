@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Calendar} from 'antd';
-
+import moment from 'moment';
 
 export default class PCalendar extends React.Component {
     render() {
@@ -14,7 +14,7 @@ export default class PCalendar extends React.Component {
             dateFullCellRender,
             fullscreen,
             locale,
-            preficCls,
+            prefixCls,
             className,
             style,
             onPanelChange,
@@ -33,7 +33,7 @@ export default class PCalendar extends React.Component {
                 dateFullCellRender={dateFullCellRender}
                 fullscreen={fullscreen}
                 locale={locale}
-                prefixCls={preficCls}
+                prefixCls={prefixCls}
                 className={className}
                 style={style}
                 onPanelChange={onPanelChange}
@@ -46,3 +46,31 @@ export default class PCalendar extends React.Component {
         );
     }
 }
+
+PCalendar.propTypes = {
+    dateCellRender:PropTypes.func,
+    dateFullCellRender:PropTypes.func,
+    defaultValue:PropTypes.instanceOf(Date),
+    disabledDate:PropTypes.bool,
+    fullscreen:PropTypes.bool,
+    locale:PropTypes.object,
+    mode:PropTypes.oneOf([
+        'month',
+        'year'
+    ]),
+    monthCellRender:PropTypes.func,
+    monthFullCellRender:PropTypes.func,
+    validRange:PropTypes.any,
+    value:PropTypes.instanceOf(Date),
+    onPanelChange:PropTypes.func,
+    onSelect:PropTypes.func,
+    onChange:PropTypes.func,
+    prefixCls:PropTypes.string,
+    className:PropTypes.string,
+    style:PropTypes.object
+};
+PCalendar.defaultProps = {
+    fullscreen:true,
+    mode:'month',
+    value:moment()
+};

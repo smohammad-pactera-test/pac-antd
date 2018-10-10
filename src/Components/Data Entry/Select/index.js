@@ -41,8 +41,8 @@ export default class PSelect extends React.Component {
             onPopupScroll,
             onSearch,
             onSelect,
-            defaultOpen,
-            open,
+            // defaultOpen,
+            // open,
             onDropdownVisibleChange,
             style
         } = this.props;

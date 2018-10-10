@@ -19,7 +19,8 @@ export default class PPanel extends React.Component {
                 forceRender={forceRender}
                 header={header}
                 key={key}
-                showArrow={showArrow}>
+                showArrow={showArrow}
+            >
                 {this.props.children}
             </Panel>
         );
@@ -40,6 +41,6 @@ PPanel.propTypes = {
         PropTypes.node
     ]),
     key:PropTypes.string,
-    showArrow:PropTypes.bool
-
+    showArrow:PropTypes.bool,
+    children:PropTypes.element
 };

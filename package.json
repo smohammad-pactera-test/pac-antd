@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
+    "storybook": "npm run lint:fix && start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "lint": "eslint src/Components",
     "lint:fix": "eslint --fix src/Components",

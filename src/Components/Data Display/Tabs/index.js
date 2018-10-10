@@ -7,7 +7,7 @@ export default class PTabs extends React.Component {
     render() {
 
         const {
-            activeKey,
+            // activeKey,
             animated,
             renderTabBar,
             defaultActiveKey,
@@ -49,7 +49,8 @@ export default class PTabs extends React.Component {
         );
     }
 }
-Tabs.propTypes = {
+
+PTabs.propTypes = {
     activeKey:PropTypes.string,
     animated:PropTypes.oneOfType([
         PropTypes.bool,
@@ -81,5 +82,13 @@ Tabs.propTypes = {
     onEdit:PropTypes.func,
     onNextClick:PropTypes.func,
     onPrevClick:PropTypes.func,
-    onTabClick:PropTypes.func
+    onTabClick:PropTypes.func,
+    children:PropTypes.element
+};
+
+PTabs.defaultProps = {
+    hideAdd:false,
+    size:'default',
+    tabPosition:'top',
+    type:'line'
 };

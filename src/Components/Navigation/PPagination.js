@@ -13,7 +13,7 @@ export default class PPagination extends React.Component {
             defaultPageSize,
             hideOnSinglePage,
             itemRender,
-            pageSize,
+            //  pageSize,
             pageSizeOptions,
             showQuickJumper,
             showSizeChanger,

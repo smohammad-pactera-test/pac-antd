@@ -48,12 +48,12 @@ export default class PTable extends  React.Component {
         );
     }
 }
-Table.propTypes = {
+PTable.propTypes = {
     bordered:PropTypes.bool,
     childrenColumnName:PropTypes.arrayOf(PropTypes.string),
     columns:PropTypes.any,
     components:PropTypes.any,
-    // dataSource:PropTypes.array(PropTypes.any),
+    dataSource:PropTypes.arrayOf(PropTypes.any),
     defaultExpandAllRows:PropTypes.bool,
     defaultExpandedRowKeys:PropTypes.arrayOf(PropTypes.string),
     expandedRowKeys:PropTypes.arrayOf(PropTypes.string),
@@ -82,5 +82,9 @@ Table.propTypes = {
     onExpand:PropTypes.func,
     onExpandedRowsChange:PropTypes.func,
     onHeaderRow:PropTypes.func,
-    onRow:PropTypes.func
+    onRow:PropTypes.func,
+    prefixCls:PropTypes.any,
+    useFixedHeader:PropTypes.bool,
+    className:PropTypes.string,
+    dropdownPrefixCls:PropTypes.any
 };

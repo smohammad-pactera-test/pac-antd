@@ -24,7 +24,8 @@ PTimelineItem.propTypes = {
     dot:PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.node
-    ])
+    ]),
+    children:PropTypes.element
 };
 
 PTimelineItem.defaultProps = {

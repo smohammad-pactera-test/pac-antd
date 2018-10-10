@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {DatePicker} from 'antd';
+import {commonDatepickerProps} from './index';
 
 
 export default class PMonthPicker extends React.Component {
@@ -61,3 +62,15 @@ export default class PMonthPicker extends React.Component {
         );
     }
 }
+PMonthPicker.propTypes = {
+    ...commonDatepickerProps,
+    defaultValue:PropTypes.any,
+    format:PropTypes.string,
+    monthCellContentRender:PropTypes.func,
+    renderExtraFooter:PropTypes.node,
+    value:PropTypes.instanceOf(Date),
+    onChange:PropTypes.func
+};
+PMonthPicker.defaultProps = {
+    format:'YYYY-MM'
+};

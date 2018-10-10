@@ -64,7 +64,9 @@ PCard.propTypes = {
         PropTypes.node
     ]),
     type:PropTypes.string,
-    onTabChange:PropTypes.any
+    onTabChange:PropTypes.any,
+    style:PropTypes.object,
+    children:PropTypes.element
 };
 
 PCard.defaultProps = {

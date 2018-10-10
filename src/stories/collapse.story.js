@@ -30,9 +30,9 @@ class TestCollapse extends React.Component{
 `;
         return(
             <PCollapse defaultActiveKey={['1']} onChange={callback}>
-                <Panel header="This is panel header 1" key="1">
+                <PPanel header="This is panel header 1" key="1" showArrow={true} >
                     <p>{text}</p>
-                </Panel>
+                </PPanel>
                 <Panel header="This is panel header 2" key="2">
                     <p>{text}</p>
                 </Panel>
@@ -69,7 +69,4 @@ stories.add('Baisc Collapse', withInfo({})(() => (
 
 stories.add('test Collapse', withInfo({})(() => (
    <TestCollapse/>
-
-
-
 )));

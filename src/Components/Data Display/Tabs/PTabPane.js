@@ -15,7 +15,7 @@ export default class PTabPane extends React.Component {
     }
 }
 PTabPane.propTypes = {
-    children:PropTypes.instanceOf(Element)
+    children:PropTypes.element
 };
 PTabPane.defaultProps = {
     forceRender:false
